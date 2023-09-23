@@ -1,0 +1,68 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message PlayerLoginReq
+{
+    uint32 account_type = 7;
+    string account_uid = 14;
+    AdjustTrackingInfo adjust_tracking_info = 64;
+    string birthday = 875;
+    uint32 channel_id = 1565;
+    string checksum = 1334;
+    string checksum_client_version = 581;
+    uint32 client_data_version = 847;
+    string client_verison_hash = 2040;
+    string client_version = 2;
+    string country_code = 104;
+    string cps = 1983;
+    string device_info = 15;
+    string device_name = 12;
+    string device_uuid = 5;
+    bytes environment_error_code = 256;
+    bytes extra_bin_data = 2046;
+    uint32 gm_uid = 1790;
+    bool is_editor = 1;
+    bool is_guest = 13;
+    bool is_transfer = 624;
+    uint32 language_type = 11;
+    uint64 login_rand = 9;
+    string online_id = 577;
+    string platform = 4;
+    uint32 platform_type = 3;
+    string psn_id = 1146;
+    uint32 reg_platform = 424;
+    bytes security_cmd_reply = 874;
+    string security_library_md5 = 868;
+    string security_library_version = 828;
+    uint32 sub_channel_id = 1458;
+    string system_version = 6;
+    uint32 tag = 525;
+    uint32 target_home_owner_uid = 899;
+    uint32 target_uid = 10;
+    string token = 8;
+    TrackingIOInfo tracking_io_info = 1713;
+    uint32 Unk3300_NDLANBEIGEG = 1320;
+    uint32 Unk3300_OFFHPAFIFGD = 1028;
+    uint32 Unk3300_OOBHAIIIPHH = 85;
+    uint32 Unk3300_PMGFBMJNNCL = 82;
+}
+
+import "AdjustTrackingInfo.proto";
+import "TrackingIOInfo.proto";

@@ -1,0 +1,41 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message HideAndSeekSettleNotify
+{
+    uint32 cost_time = 15;
+    bool is_record_score = 5;
+    uint32 play_index = 6;
+    SettleReason reason = 1;
+    repeated ExhibitionDisplayInfo score_list = 11;
+    repeated HideAndSeekSettleInfo settle_info_list = 4;
+    uint32 stage_type = 7;
+    repeated uint32 winner_list = 2;
+
+    enum SettleReason
+    {
+        SETTLE_REASON_TIME_OUT = 0;
+        SETTLE_REASON_PLAY_END = 1;
+        SETTLE_REASON_PLAYER_QUIT = 2;
+    }
+}
+
+import "ExhibitionDisplayInfo.proto";
+import "HideAndSeekSettleInfo.proto";

@@ -1,0 +1,46 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message GCGPlayerField
+{
+    uint32 controller_id = 6;
+    uint32 deck_card_num = 3;
+    repeated GCGDiceSideType dice_side_list = 13;
+    repeated GCGPVEIntention intention_list = 304;
+    bool is_passed = 8;
+    GCGZone Unk3300_AOPJIOHMPOF = 10;
+    GCGZone Unk3300_EFNAEFBECHD = 4;
+    GCGZone Unk3300_EIHOMDLENMK = 9;
+    uint32 Unk3300_FDFPHNDOJML = 12;
+    uint32 Unk3300_GGHKFFADEAL = 731;
+    uint32 Unk3300_GLNIFLOKBPM = 14;
+    uint32 Unk3300_IKJMGAHCFPM = 5;
+    GCGZone Unk3300_INDJNJJJNKL = 11;
+    GCGZone Unk3300_IPLMHKCNDLE = 1;
+    uint32 Unk3300_PBECINKKHND = 15;
+    repeated GCGWaitingCharacter waiting_list = 2;
+
+    map<uint32, GCGZone> modify_zone_map = 7;
+}
+
+import "GCGDiceSideType.proto";
+import "GCGPVEIntention.proto";
+import "GCGWaitingCharacter.proto";
+import "GCGZone.proto";

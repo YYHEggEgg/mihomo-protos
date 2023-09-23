@@ -1,0 +1,45 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message InBattleMechanicusInfo
+{
+    uint32 escaped_monster_num = 10;
+    repeated InBattleMechanicusCardInfo history_card_list = 5;
+    uint32 left_monster_num = 15;
+    repeated InBattleMechanicusMonsterInfo monster_list = 9;
+    repeated InBattleMechanicusCardInfo pick_card_list = 8;
+    repeated InBattleMechanicusPlayerInfo player_list = 12;
+    uint32 round = 11;
+    InBattleMechanicusStageType stage = 7;
+    uint32 total_round = 1;
+    uint32 Unk3300_CIJALCAMHCD = 3;
+    uint32 Unk3300_EBOIGFMOKHK = 4;
+    repeated uint32 Unk3300_GHBEHPGBBIH = 683;
+    uint64 Unk3300_IAPINOLIALF = 14;
+    uint64 Unk3300_IFIPKLOGEOF = 6;
+    repeated uint32 Unk3300_MNNDELKIBLG = 656;
+    uint64 wait_begin_time_us = 2;
+    uint32 wait_seconds = 13;
+}
+
+import "InBattleMechanicusCardInfo.proto";
+import "InBattleMechanicusMonsterInfo.proto";
+import "InBattleMechanicusPlayerInfo.proto";
+import "InBattleMechanicusStageType.proto";

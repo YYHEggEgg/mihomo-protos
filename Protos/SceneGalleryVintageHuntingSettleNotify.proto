@@ -1,0 +1,48 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message SceneGalleryVintageHuntingSettleNotify
+{
+    uint32 finished_watcher_num = 6;
+    bool has_new_watcher = 11;
+    bool is_new_record = 1;
+    uint32 stage_id = 9;
+    uint32 total_watcher_num = 12;
+
+    oneof info
+    {
+        VintageHuntingFirstStageSettleInfo first_stage_info = 4;
+        VintageHuntingSecondStageSettleInfo second_stage_info = 10;
+        VintageHuntingThirdStageSettleInfo third_stage_info = 8;
+    }
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 20324;
+    }
+}
+
+import "VintageHuntingFirstStageSettleInfo.proto";
+import "VintageHuntingSecondStageSettleInfo.proto";
+import "VintageHuntingThirdStageSettleInfo.proto";

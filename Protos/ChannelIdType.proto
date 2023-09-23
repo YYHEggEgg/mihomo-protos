@@ -1,0 +1,39 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+enum ChannelIdType
+{
+    CHANNEL_ID_NONE = 0;
+    CHANNEL_ID_MIHOYO = 1;
+    CHANNEL_ID_XIAOMI = 11;
+    CHANNEL_ID_COOLPAD = 12;
+    CHANNEL_ID_YYB = 13;
+    CHANNEL_ID_BILI = 14;
+    CHANNEL_ID_HUAWEI = 15;
+    CHANNEL_ID_MEIZU = 16;
+    CHANNEL_ID_360 = 17;
+    CHANNEL_ID_OPPO = 18;
+    CHANNEL_ID_VIVO = 19;
+    CHANNEL_ID_UC = 20;
+    CHANNEL_ID_LENOVO = 22;
+    CHANNEL_ID_JINLI = 23;
+    CHANNEL_ID_BAIDU = 25;
+    CHANNEL_ID_DANGLE = 26;
+}

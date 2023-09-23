@@ -1,0 +1,51 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message QueryPathReq
+{
+    Vector3Int destination_extend = 4;
+    repeated Vector destination_pos = 10;
+    QueryFilter filter = 12;
+    int32 query_id = 15;
+    OptionType query_type = 13;
+    uint32 scene_id = 11;
+    Vector3Int source_extend = 6;
+    Vector source_pos = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 2372;
+    }
+    enum OptionType
+    {
+        OPTION_NONE = 0;
+        OPTION_NORMAL = 1;
+        OPTION_FIRST_CAN_GO = 2;
+    }
+}
+
+import "QueryFilter.proto";
+import "Vector.proto";
+import "Vector3Int.proto";

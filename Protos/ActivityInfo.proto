@@ -1,0 +1,176 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message ActivityInfo
+{
+    uint32 activity_id = 12;
+    repeated ActivityPushTipsData activity_push_tips_data_list = 864;
+    uint32 activity_type = 4;
+    uint32 begin_time = 8;
+    uint32 cur_score = 1906;
+    uint32 end_time = 5;
+    repeated uint32 expire_cond_list = 3;
+    uint32 first_day_start_time = 592;
+    bool is_banner_cleared = 102;
+    bool is_common_content_closed = 1963;
+    bool is_finished = 6;
+    bool is_hidden = 919;
+    bool is_play_open_anim = 13;
+    bool is_quick_open = 1449;
+    bool is_starting = 9;
+    repeated uint32 meet_cond_list = 10;
+    uint32 schedule_id = 15;
+    uint32 score_limit = 1958;
+    uint32 selected_avatar_reward_id = 1290;
+    repeated uint32 taken_reward_list = 329;
+    repeated ActivityWatcherInfo watcher_info_list = 2;
+
+    map<uint32, uint32> activity_coin_map = 682;
+    map<uint32, uint32> wish_gift_num_map = 1399;
+
+    oneof detail
+    {
+        ArenaChallengeActivityDetailInfo arena_challenge_info = 859;
+        AsterActivityDetailInfo aster_info = 557;
+        BartenderActivityDetailInfo bartender_info = 1725;
+        BlessingActivityDetailInfo blessing_info = 1869;
+        BlitzRushActivityDetailInfo blitz_rush_info = 794;
+        BounceConjuringActivityDetailInfo bounce_conjuring_info = 767;
+        BuoyantCombatDetailInfo buoyant_combat_info = 1842;
+        ChannelerSlabActivityDetailInfo challneler_slab_info = 1015;
+        CharAmusementDetailInfo char_amusement_info = 1496;
+        ChessActivityDetailInfo chess_info = 927;
+        CrucibleActivityDetailInfo crucible_info = 14;
+        CrystalLinkActivityDetailInfo crystal_link_info = 1226;
+        DeliveryActivityDetailInfo delivery_info = 1092;
+        DigActivityDetailInfo dig_info = 403;
+        DragonSpineActivityDetailInfo dragon_spine_info = 1727;
+        EchoShellDetailInfo echo_shell_info = 1113;
+        EffigyChallengeV2DetailInfo effigy_challenge_info = 1025;
+        EffigyActivityDetailInfo effigy_info = 391;
+        ExpeditionActivityDetailInfo expedition_info = 202;
+        FindHilichurlDetailInfo find_hilichurl_info = 1411;
+        FleurFairActivityDetailInfo fleur_fair_info = 857;
+        FlightActivityDetailInfo flight_info = 1365;
+        FungusFighterDetailInfo fungus_fighter_info = 490;
+        GachaActivityDetailInfo gacha_info = 825;
+        GearActivityDetailInfo gear_info = 722;
+        GravenInnocenceDetailInfo graven_innocence_info = 1911;
+        HachiActivityDetailInfo hachi_info = 491;
+        HideAndSeekActivityDetailInfo hide_and_seek_info = 427;
+        InstableSprayDetailInfo instable_spray_info = 1043;
+        IrodoriActivityDetailInfo irodori_info = 750;
+        IslandPartyDetailInfo island_party_info = 1885;
+        LanternRiteActivityDetailInfo lantern_rite_activity_info = 1876;
+        LuminanceStoneChallengeActivityDetailInfo luminance_stone_challenge_info = 1308;
+        LunaRiteDetailInfo luna_rite_info = 814;
+        MichiaeMatsuriActivityDetailInfo michiae_matsuri_info = 194;
+        MistTrialActivityDetailInfo mist_trial_activity_info = 156;
+        MoonfinTrialActivityDetailInfo moonfin_trial_info = 1588;
+        MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;
+        MusicGameActivityDetailInfo music_game_info = 460;
+        PhotoActivityDetailInfo photo_info = 328;
+        PlantFlowerActivityDetailInfo plant_flower_info = 54;
+        PotionActivityDetailInfo potion_info = 1273;
+        RockBoardExploreDetailInfo rock_board_explore_info = 1078;
+        RogueDiaryActivityDetailInfo rogue_diary_info = 812;
+        RoguelikeDungeonActivityDetailInfo roguelike_dungoen_info = 219;
+        SalesmanActivityDetailInfo salesman_info = 11;
+        SeaLampActivityDetailInfo sam_lamp_info = 7;
+        SeaLampActivityInfo sea_lamp_info = 494;
+        SpiceActivityDetailInfo spice_info = 1891;
+        SummerTimeDetailInfo summer_time_info = 1372;
+        SummerTimeV2DetailInfo summer_time_v2_info = 622;
+        SumoActivityDetailInfo sumo_info = 1261;
+        TanukiTravelActivityDetailInfo tanuki_travel_activity_info = 1796;
+        TreasureMapActivityDetailInfo treasure_map_info = 1114;
+        TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;
+        TrialAvatarActivityDetailInfo trial_avatar_info = 1;
+        UgcActivityDetailInfo ugc_info = 703;
+        VintageActivityDetailInfo vintage_info = 445;
+        WaterSpiritActivityDetailInfo water_spirit_info = 1675;
+        WindFieldDetailInfo wind_field_info = 352;
+        WinterCampActivityDetailInfo winter_camp_info = 1083;
+    }
+}
+
+import "ActivityPushTipsData.proto";
+import "ActivityWatcherInfo.proto";
+import "ArenaChallengeActivityDetailInfo.proto";
+import "AsterActivityDetailInfo.proto";
+import "BartenderActivityDetailInfo.proto";
+import "BlessingActivityDetailInfo.proto";
+import "BlitzRushActivityDetailInfo.proto";
+import "BounceConjuringActivityDetailInfo.proto";
+import "BuoyantCombatDetailInfo.proto";
+import "ChannelerSlabActivityDetailInfo.proto";
+import "CharAmusementDetailInfo.proto";
+import "ChessActivityDetailInfo.proto";
+import "CrucibleActivityDetailInfo.proto";
+import "CrystalLinkActivityDetailInfo.proto";
+import "DeliveryActivityDetailInfo.proto";
+import "DigActivityDetailInfo.proto";
+import "DragonSpineActivityDetailInfo.proto";
+import "EchoShellDetailInfo.proto";
+import "EffigyActivityDetailInfo.proto";
+import "EffigyChallengeV2DetailInfo.proto";
+import "ExpeditionActivityDetailInfo.proto";
+import "FindHilichurlDetailInfo.proto";
+import "FleurFairActivityDetailInfo.proto";
+import "FlightActivityDetailInfo.proto";
+import "FungusFighterDetailInfo.proto";
+import "GachaActivityDetailInfo.proto";
+import "GearActivityDetailInfo.proto";
+import "GravenInnocenceDetailInfo.proto";
+import "HachiActivityDetailInfo.proto";
+import "HideAndSeekActivityDetailInfo.proto";
+import "InstableSprayDetailInfo.proto";
+import "IrodoriActivityDetailInfo.proto";
+import "IslandPartyDetailInfo.proto";
+import "LanternRiteActivityDetailInfo.proto";
+import "LuminanceStoneChallengeActivityDetailInfo.proto";
+import "LunaRiteDetailInfo.proto";
+import "MichiaeMatsuriActivityDetailInfo.proto";
+import "MistTrialActivityDetailInfo.proto";
+import "MoonfinTrialActivityDetailInfo.proto";
+import "MuqadasPotionActivityDetailInfo.proto";
+import "MusicGameActivityDetailInfo.proto";
+import "PhotoActivityDetailInfo.proto";
+import "PlantFlowerActivityDetailInfo.proto";
+import "PotionActivityDetailInfo.proto";
+import "RockBoardExploreDetailInfo.proto";
+import "RogueDiaryActivityDetailInfo.proto";
+import "RoguelikeDungeonActivityDetailInfo.proto";
+import "SalesmanActivityDetailInfo.proto";
+import "SeaLampActivityDetailInfo.proto";
+import "SeaLampActivityInfo.proto";
+import "SpiceActivityDetailInfo.proto";
+import "SummerTimeDetailInfo.proto";
+import "SummerTimeV2DetailInfo.proto";
+import "SumoActivityDetailInfo.proto";
+import "TanukiTravelActivityDetailInfo.proto";
+import "TreasureMapActivityDetailInfo.proto";
+import "TreasureSeelieActivityDetailInfo.proto";
+import "TrialAvatarActivityDetailInfo.proto";
+import "UgcActivityDetailInfo.proto";
+import "VintageActivityDetailInfo.proto";
+import "WaterSpiritActivityDetailInfo.proto";
+import "WindFieldDetailInfo.proto";
+import "WinterCampActivityDetailInfo.proto";

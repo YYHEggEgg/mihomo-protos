@@ -1,0 +1,49 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message BreakoutSnapShot
+{
+    repeated BreakoutAction action_list = 5;
+    repeated BreakoutElementReactionCounter ball_element_reaction_list = 16;
+    repeated BreakoutPhysicalObject ball_list = 3;
+    repeated BreakoutElementReactionCounter brick_element_reaction_list = 15;
+    uint64 client_game_time = 1;
+    uint32 combo = 9;
+    repeated BreakoutPhysicalObject dynamic_object_list = 18;
+    repeated uint32 id_index_list = 19;
+    bool is_finish = 7;
+    uint32 life_count = 11;
+    uint32 max_combo = 10;
+    repeated BreakoutPhysicalObject physical_object_list = 4;
+    int32 raw_client_game_time = 20;
+    uint32 remaining_boss_hp = 14;
+    uint32 score = 8;
+    uint64 server_game_time = 2;
+    repeated BreakoutSpawnPoint spawn_point_list = 13;
+    repeated BreakoutSyncConnectUidInfo uid_info_list = 17;
+    uint32 wave_index = 6;
+    uint32 wave_suite_index = 12;
+}
+
+import "BreakoutAction.proto";
+import "BreakoutElementReactionCounter.proto";
+import "BreakoutPhysicalObject.proto";
+import "BreakoutSpawnPoint.proto";
+import "BreakoutSyncConnectUidInfo.proto";

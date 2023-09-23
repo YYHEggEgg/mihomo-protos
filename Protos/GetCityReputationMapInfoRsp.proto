@@ -25,4 +25,13 @@ message GetCityReputationMapInfoRsp
     bool Unk3300_GJFNOPNMFNG = 12;
     bool Unk3300_NCMHMODIIKM = 5;
     repeated uint32 unlock_hunting_city_list = 4;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 2848;
+    }
 }

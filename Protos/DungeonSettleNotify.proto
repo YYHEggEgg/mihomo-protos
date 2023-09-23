@@ -45,6 +45,15 @@ message DungeonSettleNotify
         TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 1117;
         WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 1522;
     }
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 957;
+    }
 }
 
 import "ChannelerSlabLoopDungeonResultInfo.proto";

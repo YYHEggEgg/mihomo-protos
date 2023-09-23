@@ -22,4 +22,14 @@ message RestartCoinCollectPlaySingleModeReq
 {
     uint32 level_id = 2;
     uint32 multistage_play_index = 3;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 21382;
+    }
 }

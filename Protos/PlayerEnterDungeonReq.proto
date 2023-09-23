@@ -23,6 +23,16 @@ message PlayerEnterDungeonReq
     uint32 dungeon_id = 4;
     DungeonEnterPosInfo enter_pos_info = 9;
     uint32 point_id = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 956;
+    }
 }
 
 import "DungeonEnterPosInfo.proto";

@@ -21,6 +21,15 @@ package miHomo.Protos;
 message FurnitureCurModuleArrangeCountNotify
 {
     repeated Uint32Pair furniture_arrange_count_list = 3;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4538;
+    }
 }
 
 import "Uint32Pair.proto";

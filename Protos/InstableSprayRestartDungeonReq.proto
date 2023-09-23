@@ -21,6 +21,16 @@ package miHomo.Protos;
 message InstableSprayRestartDungeonReq
 {
     repeated InstableSprayAvatarInfo avatar_info_list = 15;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 22725;
+    }
 }
 
 import "InstableSprayAvatarInfo.proto";

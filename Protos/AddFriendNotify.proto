@@ -22,6 +22,15 @@ message AddFriendNotify
 {
     FriendBrief target_friend_brief = 2;
     uint32 target_uid = 15;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4037;
+    }
 }
 
 import "FriendBrief.proto";

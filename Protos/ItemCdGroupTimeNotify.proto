@@ -21,4 +21,13 @@ package miHomo.Protos;
 message ItemCdGroupTimeNotify
 {
     map<uint32, uint64> item_cd_map = 7;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 680;
+    }
 }

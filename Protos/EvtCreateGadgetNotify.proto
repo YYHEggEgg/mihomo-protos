@@ -39,6 +39,16 @@ message EvtCreateGadgetNotify
     bool Unk3300_DLBIJFOONBA = 15;
     bool Unk3300_EJNBIGLGMII = 8;
     bool Unk3300_OJHDJGAFDNN = 1433;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 400;
+    }
 }
 
 import "ForwardType.proto";

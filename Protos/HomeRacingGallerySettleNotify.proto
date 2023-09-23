@@ -24,6 +24,15 @@ message HomeRacingGallerySettleNotify
     bool is_new_record = 7;
     uint32 rank = 15;
     RacingGallerySettleInfo settle_info = 14;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4807;
+    }
 }
 
 import "RacingGallerySettleInfo.proto";

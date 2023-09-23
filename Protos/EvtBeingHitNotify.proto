@@ -22,6 +22,16 @@ message EvtBeingHitNotify
 {
     EvtBeingHitInfo being_hit_info = 12;
     ForwardType forward_type = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 379;
+    }
 }
 
 import "EvtBeingHitInfo.proto";

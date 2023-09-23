@@ -25,4 +25,13 @@ message SealBattleProgressNotify
     uint32 progress = 4;
     uint32 seal_entity_id = 6;
     uint32 seal_radius = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 265;
+    }
 }

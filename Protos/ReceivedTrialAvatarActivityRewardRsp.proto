@@ -23,4 +23,13 @@ message ReceivedTrialAvatarActivityRewardRsp
     uint32 activity_id = 6;
     int32 retcode = 8;
     uint32 trial_avatar_index_id = 10;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 2175;
+    }
 }

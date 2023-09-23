@@ -24,6 +24,15 @@ message AvatarTeamAllDataNotify
     repeated uint64 temp_avatar_guid_list = 2;
 
     map<uint32, AvatarTeam> avatar_team_map = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 1615;
+    }
 }
 
 import "AvatarTeam.proto";

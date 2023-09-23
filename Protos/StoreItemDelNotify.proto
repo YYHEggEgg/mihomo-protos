@@ -22,6 +22,15 @@ message StoreItemDelNotify
 {
     repeated uint64 guid_list = 8;
     StoreType store_type = 6;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 619;
+    }
 }
 
 import "StoreType.proto";

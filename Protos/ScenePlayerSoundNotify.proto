@@ -24,6 +24,14 @@ message ScenePlayerSoundNotify
     PlaySoundType play_type = 15;
     string sound_name = 14;
 
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 266;
+    }
     enum PlaySoundType
     {
         PLAY_SOUND_TYPE_NONE = 0;

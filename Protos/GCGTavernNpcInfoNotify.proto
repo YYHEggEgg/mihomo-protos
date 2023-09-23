@@ -23,6 +23,15 @@ message GCGTavernNpcInfoNotify
     GCGTavernNpcInfo character_npc = 11;
     repeated GCGTavernNpcInfo Unk3300_BAMLNENDLCM = 2;
     repeated GCGTavernNpcInfo Unk3300_FKAKHMMIEBC = 12;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 7267;
+    }
 }
 
 import "GCGTavernNpcInfo.proto";

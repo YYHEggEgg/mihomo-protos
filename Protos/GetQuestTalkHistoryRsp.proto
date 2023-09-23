@@ -23,4 +23,13 @@ message GetQuestTalkHistoryRsp
     uint32 parent_quest_id = 3;
     int32 retcode = 4;
     repeated uint32 talk_id_list = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 478;
+    }
 }

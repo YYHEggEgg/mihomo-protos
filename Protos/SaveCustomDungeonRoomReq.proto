@@ -23,6 +23,16 @@ message SaveCustomDungeonRoomReq
     CustomDungeonRoom custom_dungeon_room = 4;
     bool is_update_setting = 12;
     CustomDungeonSetting setting = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 6222;
+    }
 }
 
 import "CustomDungeonRoom.proto";

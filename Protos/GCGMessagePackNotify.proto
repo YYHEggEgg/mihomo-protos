@@ -22,6 +22,15 @@ message GCGMessagePackNotify
 {
     repeated GCGMessagePack msg_pack_list = 12;
     uint32 server_seq = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 7299;
+    }
 }
 
 import "GCGMessagePack.proto";

@@ -27,6 +27,15 @@ message AvatarLifeStateChangeNotify
     uint32 move_reliable_seq = 12;
     repeated ServerBuff server_buff_list = 14;
     uint32 source_entity_id = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 1247;
+    }
 }
 
 import "PlayerDieType.proto";

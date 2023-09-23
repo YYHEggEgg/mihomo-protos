@@ -23,4 +23,13 @@ message GalleryBalloonScoreNotify
     uint32 gallery_id = 11;
 
     map<uint32, uint32> uid_score_map = 12;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 5556;
+    }
 }

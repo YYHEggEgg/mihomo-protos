@@ -21,6 +21,13 @@ package miHomo.Protos;
 message SceneEntitiesMovesRsp
 {
     repeated EntityMoveFailInfo entity_move_fail_info_list = 10;
+
+    enum CmdId
+    {
+        NONE = 0;
+        ENET_CHANNEL_ID = 1;
+        CMD_ID = 245;
+    }
 }
 
 import "EntityMoveFailInfo.proto";

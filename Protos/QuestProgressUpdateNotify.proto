@@ -23,4 +23,13 @@ message QuestProgressUpdateNotify
     repeated uint32 fail_progress_list = 15;
     repeated uint32 finish_progress_list = 12;
     uint32 quest_id = 9;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 490;
+    }
 }

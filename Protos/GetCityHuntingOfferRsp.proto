@@ -26,6 +26,15 @@ message GetCityHuntingOfferRsp
     uint32 next_refresh_time = 5;
     HuntingPair ongoing_hunting_pair = 15;
     int32 retcode = 9;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4335;
+    }
 }
 
 import "HuntingOfferData.proto";

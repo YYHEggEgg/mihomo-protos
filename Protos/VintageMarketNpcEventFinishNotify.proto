@@ -23,4 +23,13 @@ message VintageMarketNpcEventFinishNotify
     uint32 coin_a = 3;
     uint32 coin_c = 9;
     repeated uint32 unlock_strategy_list = 12;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 24781;
+    }
 }

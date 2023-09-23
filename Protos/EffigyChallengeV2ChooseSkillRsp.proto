@@ -23,4 +23,13 @@ message EffigyChallengeV2ChooseSkillRsp
     uint32 challenge_mode_skill_no = 12;
     uint32 level_id = 10;
     int32 retcode = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 23618;
+    }
 }

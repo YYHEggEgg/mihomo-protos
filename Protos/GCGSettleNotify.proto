@@ -28,6 +28,15 @@ message GCGSettleNotify
     GCGEndReason reason = 4;
     repeated ItemParam reward_item_list = 8;
     uint32 win_controller_id = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 7562;
+    }
 }
 
 import "GCGEndReason.proto";

@@ -22,6 +22,14 @@ message Unk3300_LOINGBJLJEM
 {
     Unk3300_KDBJPJADJKF Unk3300_NOFBEJLNMLA = 4;
 
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 7048;
+    }
     enum Unk3300_KDBJPJADJKF
     {
         Unk3300_KDBJPJADJKF_Unk3300_EKBFJPGGECM = 0;

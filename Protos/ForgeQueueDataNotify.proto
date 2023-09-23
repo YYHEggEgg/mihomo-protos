@@ -23,6 +23,16 @@ message ForgeQueueDataNotify
     repeated uint32 removed_forge_queue_list = 15;
 
     map<uint32, ForgeQueueData> forge_queue_map = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 695;
+    }
 }
 
 import "ForgeQueueData.proto";

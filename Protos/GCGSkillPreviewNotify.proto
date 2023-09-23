@@ -25,6 +25,15 @@ message GCGSkillPreviewNotify
     uint32 onstage_card_guid = 6;
     repeated GCGSkillPreviewPlayCardInfo play_card_list = 11;
     repeated GCGSkillPreviewInfo skill_preview_list = 15;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 7659;
+    }
 }
 
 import "GCGChangeOnstageInfo.proto";

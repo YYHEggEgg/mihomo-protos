@@ -22,6 +22,16 @@ message PublishUgcReq
 {
     uint64 ugc_guid = 12;
     UgcType ugc_type = 10;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 6312;
+    }
 }
 
 import "UgcType.proto";

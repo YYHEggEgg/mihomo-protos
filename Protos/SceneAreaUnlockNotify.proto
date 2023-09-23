@@ -22,4 +22,13 @@ message SceneAreaUnlockNotify
 {
     repeated uint32 area_list = 5;
     uint32 scene_id = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 207;
+    }
 }

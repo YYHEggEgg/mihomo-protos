@@ -23,6 +23,16 @@ message EvtBulletMoveNotify
     Vector cur_pos = 4;
     uint32 entity_id = 13;
     ForwardType forward_type = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 389;
+    }
 }
 
 import "ForwardType.proto";

@@ -21,9 +21,9 @@ package miHomo.Protos;
 message AttackHitEffectResult
 {
     float air_strength = 13;
-    uint32 hit_eff_level = 1;
     float hit_halt_time = 9;
     float hit_halt_time_scale = 10;
-    uint32 original_hit_eff_level = 8;
     float retreat_strength = 3;
+    uint32 Unk3300_KLNGDAMMFIF = 1;
+    uint32 Unk3300_LCKECJCKKJK = 8;
 }

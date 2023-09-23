@@ -28,6 +28,14 @@ message FishBattleEndRsp
     repeated ItemParam Unk3300_ABBBGOBDJEC = 12;
     repeated ItemParam Unk3300_MDCKKPGNKGL = 1;
 
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 5845;
+    }
     enum FishNoRewardReason
     {
         FISH_NO_REWARD_REASON_NONE = 0;

@@ -26,6 +26,15 @@ message SumoSwitchTeamRsp
     uint32 stage_id = 2;
     uint32 Unk3300_BNJBIGHIJOC = 8;
     uint32 Unk3300_DJBJACGHGDM = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 8201;
+    }
 }
 
 import "SumoDungeonTeam.proto";

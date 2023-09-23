@@ -23,6 +23,15 @@ message ReunionBriefInfoRsp
     bool is_activate = 15;
     int32 retcode = 2;
     ReunionBriefInfo reunion_brief_info = 13;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 5091;
+    }
 }
 
 import "ReunionBriefInfo.proto";

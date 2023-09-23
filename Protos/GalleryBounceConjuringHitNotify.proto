@@ -23,4 +23,13 @@ message GalleryBounceConjuringHitNotify
     uint32 add_score = 15;
     uint32 gallery_id = 8;
     bool is_perfect = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 5542;
+    }
 }

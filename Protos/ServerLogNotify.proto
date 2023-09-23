@@ -23,6 +23,15 @@ message ServerLogNotify
     ServerLogLevel log_level = 5;
     ServerLogType log_type = 9;
     string server_log = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 1;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 27;
+    }
 }
 
 import "ServerLogLevel.proto";

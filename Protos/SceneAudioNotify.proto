@@ -25,4 +25,14 @@ message SceneAudioNotify
     repeated string param3 = 13;
     uint32 source_uid = 6;
     int32 type = 15;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 3009;
+    }
 }

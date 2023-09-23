@@ -27,6 +27,14 @@ message BeginCameraSceneLookWithTemplateNotify
     Vector Unk3300_FJDFGLNLMBN = 1;
     Vector Unk3300_PPCIDICMIEN = 10;
 
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 3342;
+    }
     enum FollowType
     {
         FOLLOW_TYPE_INIT_FOLLOW_POS = 0;

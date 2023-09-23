@@ -25,6 +25,15 @@ message SceneEntityMoveRsp
     uint32 reliable_seq = 15;
     int32 retcode = 9;
     uint32 scene_time = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 1;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 278;
+    }
 }
 
 import "MotionInfo.proto";

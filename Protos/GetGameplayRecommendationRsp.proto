@@ -29,6 +29,15 @@ message GetGameplayRecommendationRsp
         GameplayRecommendationReliquaryResponse reliquary_response = 1153;
         GameplayRecommendationSkillResponse skill_response = 680;
     }
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 113;
+    }
 }
 
 import "GameplayRecommendationElementReliquaryResponse.proto";

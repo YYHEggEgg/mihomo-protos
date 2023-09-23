@@ -23,4 +23,13 @@ message Unk3300_DMOBAABGOBF
     bool is_success = 6;
     string Unk3300_JOCKIGCENGI = 13;
     string Unk3300_NKHMMPMEILJ = 7;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 7193;
+    }
 }

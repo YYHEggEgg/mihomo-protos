@@ -31,7 +31,7 @@ message GCGDuel
     uint32 game_id = 4;
     repeated GCGCard history_card_list = 1872;
     repeated GCGMessagePack history_msg_pack_list = 797;
-    repeated GCGPVEIntention intetion_list = 2;
+    repeated GCGPVEIntention intention_list = 2;
     GCGPhase phase = 14;
     uint32 round = 11;
     uint32 server_seq = 3;

@@ -26,6 +26,15 @@ message HuntingOngoingNotify
     bool is_final = 5;
     bool is_started = 13;
     Vector next_position = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4318;
+    }
 }
 
 import "HuntingPair.proto";

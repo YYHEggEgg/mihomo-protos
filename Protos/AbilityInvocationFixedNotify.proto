@@ -26,6 +26,16 @@ message AbilityInvocationFixedNotify
     AbilityInvokeEntry Unk3300_KFMHLLHECCJ = 9;
     AbilityInvokeEntry Unk3300_LDIAOMFIBPL = 7;
     AbilityInvokeEntry Unk3300_ONGNOHLIIBO = 3;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 1179;
+    }
 }
 
 import "AbilityInvokeEntry.proto";

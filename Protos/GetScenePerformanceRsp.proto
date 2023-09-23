@@ -29,6 +29,15 @@ message GetScenePerformanceRsp
     uint32 Unk3300_MIJMKLBGKML = 11;
     uint32 Unk3300_MMALJIFDKJK = 13;
     uint32 Unk3300_PDPJEMEKHKD = 10;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 3010;
+    }
 }
 
 import "Vector.proto";

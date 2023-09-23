@@ -23,4 +23,14 @@ message IrodoriChessUnequipCardReq
     uint32 card_id = 3;
     bool is_hard_map = 2;
     uint32 level_id = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 8409;
+    }
 }

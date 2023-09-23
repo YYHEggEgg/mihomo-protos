@@ -38,6 +38,15 @@ message TowerAllDataRsp
 
     map<uint32, uint32> floor_open_time_map = 14;
     map<uint32, uint32> skip_floor_granted_reward_item_map = 3;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 2478;
+    }
 }
 
 import "TowerCurLevelRecord.proto";

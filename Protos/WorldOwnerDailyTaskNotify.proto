@@ -23,6 +23,16 @@ message WorldOwnerDailyTaskNotify
     uint32 filter_city_id = 4;
     uint32 finished_daily_task_num = 9;
     repeated DailyTaskInfo task_list = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 193;
+    }
 }
 
 import "DailyTaskInfo.proto";

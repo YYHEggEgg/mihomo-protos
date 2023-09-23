@@ -22,4 +22,13 @@ message MichiaeMatsuriRemoveChestMarkNotify
 {
     uint32 config_id = 6;
     uint32 group_id = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 8203;
+    }
 }

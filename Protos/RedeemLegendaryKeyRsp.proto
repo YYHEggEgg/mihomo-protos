@@ -22,4 +22,13 @@ message RedeemLegendaryKeyRsp
 {
     uint32 legendary_key_count = 2;
     int32 retcode = 6;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 467;
+    }
 }

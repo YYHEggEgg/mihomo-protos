@@ -31,6 +31,14 @@ message BrickBreakerSettleNotify
     uint32 time = 5;
     repeated Uint32Pair update_skill_list = 4;
 
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 23886;
+    }
     enum SettleReason
     {
         SETTLE_REASON_TIME_OUT = 0;

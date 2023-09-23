@@ -23,4 +23,14 @@ message RogueDiaryDungeonSettleNotify
     uint32 cur_round = 11;
     uint32 explore_time = 4;
     bool is_finish = 14;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 8726;
+    }
 }

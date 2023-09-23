@@ -29,6 +29,15 @@ message LanternRiteStartFireworksReformRsp
     uint32 Unk3300_LKKBPAJOCML = 5;
     uint32 Unk3300_LKOFBPDKEGG = 12;
     uint32 Unk3300_OMHPIGGDCBO = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 8652;
+    }
 }
 
 import "LanternRiteFireworksReformFactorInfo.proto";

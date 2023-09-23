@@ -24,4 +24,13 @@ message GallerySumoKillMonsterNotify
     uint32 kill_elite_monster_num = 14;
     uint32 kill_normal_monster_num = 4;
     uint32 score = 6;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 5590;
+    }
 }

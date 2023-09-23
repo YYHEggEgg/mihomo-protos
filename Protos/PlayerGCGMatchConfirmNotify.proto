@@ -23,4 +23,13 @@ message PlayerGCGMatchConfirmNotify
     bool is_agree = 6;
     uint32 match_id = 14;
     uint32 uid = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4171;
+    }
 }

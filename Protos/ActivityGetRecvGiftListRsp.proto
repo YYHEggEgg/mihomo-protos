@@ -23,6 +23,15 @@ message ActivityGetRecvGiftListRsp
     repeated ActivityRecvGiftData recv_gift_list = 10;
     int32 retcode = 9;
     uint32 schedule_id = 7;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 8844;
+    }
 }
 
 import "ActivityRecvGiftData.proto";

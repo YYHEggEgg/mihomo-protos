@@ -37,6 +37,15 @@ message EnterRoguelikeDungeonNotify
     bool Unk3300_PKPOKOAAOKF = 1469;
 
     map<uint32, RogueCellInfo> cell_info_map = 14;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 8657;
+    }
 }
 
 import "RogueCellInfo.proto";

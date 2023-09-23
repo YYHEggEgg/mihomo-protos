@@ -23,4 +23,13 @@ message GetParentQuestVideoKeyRsp
     uint32 parent_quest_id = 15;
     int32 retcode = 4;
     uint64 video_key = 12;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 491;
+    }
 }

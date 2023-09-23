@@ -23,4 +23,14 @@ message EnterTrialAvatarActivityDungeonReq
     uint32 activity_id = 1;
     uint32 enter_point_id = 7;
     uint32 trial_avatar_index_id = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 2142;
+    }
 }

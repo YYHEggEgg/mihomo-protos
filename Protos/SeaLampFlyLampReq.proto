@@ -24,6 +24,16 @@ message SeaLampFlyLampReq
     uint32 item_num = 15;
     int32 param = 14;
     Vector pos = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 2187;
+    }
 }
 
 import "Vector.proto";

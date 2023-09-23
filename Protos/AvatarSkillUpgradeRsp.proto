@@ -25,4 +25,13 @@ message AvatarSkillUpgradeRsp
     uint32 cur_level = 6;
     uint32 old_level = 1;
     int32 retcode = 15;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 1048;
+    }
 }

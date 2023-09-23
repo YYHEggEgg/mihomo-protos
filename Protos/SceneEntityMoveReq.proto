@@ -24,6 +24,15 @@ message SceneEntityMoveReq
     MotionInfo motion_info = 4;
     uint32 reliable_seq = 3;
     uint32 scene_time = 5;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 247;
+    }
 }
 
 import "MotionInfo.proto";

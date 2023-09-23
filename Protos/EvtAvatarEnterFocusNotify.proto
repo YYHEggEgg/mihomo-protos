@@ -33,6 +33,16 @@ message EvtAvatarEnterFocusNotify
     bool Unk3300_NLNIBJAFADG = 7;
     bool Unk3300_NPBLDGPCDOC = 15;
     bool Unk3300_OOOPPHEJKDI = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 344;
+    }
 }
 
 import "ForwardType.proto";

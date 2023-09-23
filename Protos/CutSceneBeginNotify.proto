@@ -23,6 +23,15 @@ message CutSceneBeginNotify
     uint32 cutscene_id = 14;
     repeated CutSceneExtraParam extra_param_list = 13;
     bool is_wait_others = 1;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 283;
+    }
 }
 
 import "CutSceneExtraParam.proto";

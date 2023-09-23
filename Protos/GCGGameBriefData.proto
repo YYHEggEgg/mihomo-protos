@@ -22,10 +22,10 @@ message GCGGameBriefData
 {
     GCGGameBusinessType business_type = 8;
     uint32 game_id = 12;
-    uint32 game_uid = 14;
     uint32 platform_type = 6;
     repeated GCGPlayerBriefData player_brief_list = 5;
-    uint32 verify_code = 13;
+    uint32 Unk3300_FJJDMIBIBJN = 14;
+    uint32 Unk3300_NCLDOGNCHGF = 13;
 }
 
 import "GCGGameBusinessType.proto";

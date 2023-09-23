@@ -21,4 +21,13 @@ package miHomo.Protos;
 message Unk3300_DGBNCDEIIFC
 {
     repeated uint32 monster_id_list = 9;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 952;
+    }
 }

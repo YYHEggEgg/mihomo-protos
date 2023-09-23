@@ -23,6 +23,15 @@ message DropItemRsp
     uint64 guid = 6;
     int32 retcode = 4;
     StoreType store_type = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 627;
+    }
 }
 
 import "StoreType.proto";

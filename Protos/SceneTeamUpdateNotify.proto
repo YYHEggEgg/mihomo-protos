@@ -22,6 +22,15 @@ message SceneTeamUpdateNotify
 {
     bool is_in_mp = 7;
     repeated SceneTeamAvatar scene_team_avatar_list = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 1728;
+    }
 }
 
 import "SceneTeamAvatar.proto";

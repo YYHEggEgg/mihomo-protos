@@ -56,6 +56,15 @@ message PlayerLoginRsp
 
     map<string, int32> ability_hash_map = 3;
     map<uint32, BlockInfo> block_info_map = 2018;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 119;
+    }
 }
 
 import "BlockInfo.proto";

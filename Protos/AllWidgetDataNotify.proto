@@ -31,6 +31,15 @@ message AllWidgetDataNotify
     SkyCrystalDetectorData sky_crystal_detector_data = 4;
     repeated WidgetSlotData slot_list = 6;
     WeatherWizardData weather_wizard_data = 15;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4286;
+    }
 }
 
 import "AnchorPointData.proto";

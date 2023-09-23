@@ -23,6 +23,15 @@ message HomePreviewBlueprintRsp
     int32 retcode = 13;
     HomeSceneArrangementInfo scene_arrangement_info = 5;
     string share_code = 9;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 4462;
+    }
 }
 
 import "HomeSceneArrangementInfo.proto";

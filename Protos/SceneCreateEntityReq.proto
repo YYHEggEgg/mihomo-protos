@@ -23,6 +23,16 @@ message SceneCreateEntityReq
     CreateEntityInfo entity = 8;
     bool is_destroy_when_disconnect = 15;
     CreateReason reason = 4;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        IS_ALLOW_CLIENT = 1;
+        CMD_ID = 294;
+    }
 }
 
 import "CreateEntityInfo.proto";

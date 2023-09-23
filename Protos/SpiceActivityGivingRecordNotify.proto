@@ -23,4 +23,13 @@ message SpiceActivityGivingRecordNotify
     uint32 avatar_id = 5;
     uint32 Unk3300_CIHIAJEGCBO = 3;
     uint32 Unk3300_LAKPMMIPBMI = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 8719;
+    }
 }

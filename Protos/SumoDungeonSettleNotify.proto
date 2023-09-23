@@ -26,4 +26,13 @@ message SumoDungeonSettleNotify
     uint32 kill_elite_monster_num = 15;
     uint32 kill_monster_num = 12;
     uint32 stage_id = 11;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 8434;
+    }
 }

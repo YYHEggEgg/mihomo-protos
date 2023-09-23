@@ -24,6 +24,15 @@ message FishEscapeNotify
     Vector pos = 11;
     FishEscapeReason reason = 12;
     uint32 uid = 2;
+
+    enum CmdId
+    {
+        option allow_alias = true;
+        NONE = 0;
+        ENET_CHANNEL_ID = 0;
+        ENET_IS_RELIABLE = 1;
+        CMD_ID = 5817;
+    }
 }
 
 import "FishEscapeReason.proto";

@@ -1,0 +1,43 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message GetPlayerTokenReq
+{
+    string account_ext = 6;
+    string account_token = 2;
+    uint32 account_type = 5;
+    string account_uid = 4;
+    string birthday = 65;
+    uint32 channel_id = 3;
+    string client_ip_str = 8;
+    string client_rand_key = 776;
+    uint32 cloud_client_ip = 13;
+    string country_code = 1;
+    bool is_guest = 14;
+    uint32 key_id = 294;
+    uint32 lang = 904;
+    uint32 minors_reg_min_age = 1399;
+    string online_id = 12;
+    uint32 platform_type = 10;
+    string psn_id = 15;
+    string psn_region = 9;
+    uint32 sub_channel_id = 7;
+    uint32 uid = 11;
+}

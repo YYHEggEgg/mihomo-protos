@@ -1,0 +1,34 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message CustomDungeonResultInfo
+{
+    repeated ChallengeBrief child_challenge_list = 3;
+    uint64 dungeon_guid = 9;
+    CustomDungeonFinishType finish_type = 2;
+    uint32 got_coin_num = 11;
+    bool is_arrive_finish = 15;
+    bool is_liked = 14;
+    bool is_stored = 8;
+    uint32 time_cost = 4;
+}
+
+import "ChallengeBrief.proto";
+import "CustomDungeonFinishType.proto";

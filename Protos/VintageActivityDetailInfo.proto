@@ -1,0 +1,36 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message VintageActivityDetailInfo
+{
+    VintageBoothUsedItemData booth_data = 15;
+    bool is_content_closed = 12;
+    VintageMarketInfo market_info = 1;
+
+    map<uint32, VintageCampChallengeStageData> camp_stage_map = 3;
+    map<uint32, VintageHuntingStageData> hunting_stage_map = 7;
+    map<uint32, VintagePresentStageData> present_stage_map = 2;
+}
+
+import "VintageBoothUsedItemData.proto";
+import "VintageCampChallengeStageData.proto";
+import "VintageHuntingStageData.proto";
+import "VintageMarketInfo.proto";
+import "VintagePresentStageData.proto";

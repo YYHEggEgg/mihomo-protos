@@ -1,0 +1,57 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message GetPlayerTokenRsp
+{
+    uint32 account_type = 3;
+    string account_uid = 9;
+    string birthday = 1459;
+    uint32 black_uid_end_time = 2;
+    uint32 channel_id = 1356;
+    string client_ip_str = 64;
+    string client_version_random_key = 1558;
+    string country_code = 1960;
+    bytes extra_bin_data = 14;
+    repeated uint32 finish_collection_id_list = 1846;
+    uint32 gm_uid = 5;
+    bool is_guest = 4;
+    bool is_login_white_list = 1663;
+    bool is_proficient_player = 7;
+    bool is_watchdog_uid = 661;
+    uint32 key_id = 2003;
+    uint32 minors_reg_min_age = 1481;
+    string msg = 10;
+    uint32 platform_type = 11;
+    string psn_id = 1285;
+    uint32 reg_platform = 1614;
+    int32 retcode = 15;
+    string secret_key = 12;
+    uint64 secret_key_seed = 8;
+    bytes security_cmd_buffer = 13;
+    string server_rand_key = 1420;
+    string sign = 1993;
+    StopServerInfo stop_server = 347;
+    uint32 sub_channel_id = 891;
+    uint32 tag = 1344;
+    string token = 6;
+    uint32 uid = 1;
+}
+
+import "StopServerInfo.proto";

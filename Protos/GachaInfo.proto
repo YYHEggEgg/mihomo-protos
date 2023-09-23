@@ -1,0 +1,51 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message GachaInfo
+{
+    uint32 begin_time = 15;
+    uint32 cost_item_id = 4;
+    uint32 cost_item_num = 14;
+    uint32 cur_schedule_daily_gacha_times = 48;
+    repeated uint32 display_up4_item_list = 279;
+    repeated uint32 display_up5_item_list = 1851;
+    uint32 end_time = 3;
+    string gacha_prefab_path = 9;
+    string gacha_preview_prefab_path = 8;
+    string gacha_prob_url = 5;
+    string gacha_prob_url_oversea = 765;
+    string gacha_record_url = 7;
+    string gacha_record_url_oversea = 1004;
+    uint32 gacha_sort_id = 6;
+    uint32 gacha_times_limit = 12;
+    uint32 gacha_type = 1;
+    repeated GachaUpInfo gacha_up_info_list = 1836;
+    bool is_new_wish = 869;
+    uint32 left_gacha_times = 11;
+    uint32 schedule_id = 2;
+    uint32 ten_cost_item_id = 13;
+    uint32 ten_cost_item_num = 10;
+    string title_textmap = 1228;
+    uint32 wish_item_id = 309;
+    uint32 wish_max_progress = 1669;
+    uint32 wish_progress = 246;
+}
+
+import "GachaUpInfo.proto";

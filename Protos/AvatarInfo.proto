@@ -1,0 +1,60 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message AvatarInfo
+{
+    uint32 anim_hash = 27;
+    uint32 avatar_id = 1;
+    uint32 avatar_type = 19;
+    uint32 born_time = 23;
+    uint32 core_proud_skill_level = 13;
+    uint32 costume_id = 25;
+    repeated AvatarEquipAffixInfo equip_affix_list = 22;
+    repeated uint64 equip_guid_list = 5;
+    AvatarExcelInfo excel_info = 26;
+    AvatarExpeditionState expedition_state = 16;
+    AvatarFetterInfo fetter_info = 12;
+    uint64 guid = 2;
+    repeated uint32 inherent_proud_skill_list = 14;
+    bool is_focus = 18;
+    uint32 life_state = 4;
+    MirrorAvatarInfo mirror_avatar_info = 28;
+    repeated uint32 pending_promote_reward_list = 24;
+    uint32 skill_depot_id = 11;
+    repeated uint32 talent_id_list = 6;
+    repeated uint32 team_resonance_list = 20;
+    TrialAvatarInfo trial_avatar_info = 9;
+    uint32 wearing_flycloak_id = 21;
+
+    map<uint32, float> fight_prop_map = 7;
+    map<uint32, PropValue> prop_map = 3;
+    map<uint32, uint32> proud_skill_extra_level_map = 17;
+    map<uint32, uint32> skill_level_map = 15;
+    map<uint32, AvatarSkillInfo> skill_map = 10;
+}
+
+import "AvatarEquipAffixInfo.proto";
+import "AvatarExcelInfo.proto";
+import "AvatarExpeditionState.proto";
+import "AvatarFetterInfo.proto";
+import "AvatarSkillInfo.proto";
+import "MirrorAvatarInfo.proto";
+import "PropValue.proto";
+import "TrialAvatarInfo.proto";

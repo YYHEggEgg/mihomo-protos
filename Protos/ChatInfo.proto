@@ -1,0 +1,47 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message ChatInfo
+{
+    bool is_read = 6;
+    uint32 sequence = 2;
+    uint32 time = 11;
+    uint32 to_uid = 3;
+    uint32 uid = 15;
+
+    oneof content
+    {
+        uint32 icon = 1168;
+        SystemHint system_hint = 523;
+        string text = 1809;
+    }
+
+    enum SystemHintType
+    {
+        SYSTEM_HINT_TYPE_CHAT_NONE = 0;
+        SYSTEM_HINT_TYPE_CHAT_ENTER_WORLD = 1;
+        SYSTEM_HINT_TYPE_CHAT_LEAVE_WORLD = 2;
+    }
+
+    message SystemHint
+    {
+        uint32 type = 14;
+    }
+}

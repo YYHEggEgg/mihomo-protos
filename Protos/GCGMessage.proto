@@ -1,0 +1,95 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message GCGMessage
+{
+    oneof message
+    {
+        GCGMsgAddCards add_cards = 11;
+        GCGMsgAddDice add_dice = 13;
+        GCGMsgCardUpdate card_update = 1284;
+        GCGMsgCharDie char_die = 6;
+        GCGMsgClientPerform client_perform = 1225;
+        GCGMsgCostDice cost_dice = 4;
+        GCGMsgCostRevise cost_revise = 662;
+        GCGMsgDiceReroll dice_reroll = 12;
+        GCGMsgDiceRoll dice_roll = 3;
+        GCGMsgDuelDataChange duel_data_change = 1102;
+        GCGMsgGameOver game_over = 640;
+        GCGMsgModifyAdd modify_add = 1001;
+        GCGMsgModifyRemove modify_remove = 1447;
+        GCGMsgMoveCard move_card = 14;
+        GCGMsgNewCard new_card = 1658;
+        GCGMsgNoDamageSkillResult no_damage_skill_result = 1483;
+        GCGMsgOpTimer op_timer = 778;
+        GCGMsgPass pass = 5;
+        GCGMsgPhaseChange phase_change = 15;
+        GCGMsgPhaseContinue phase_continue = 344;
+        GCGMsgPVEIntentionChange pve_intention_change = 719;
+        GCGMsgPVEIntentionInfo pve_intention_info = 975;
+        GCGMsgReactionBegin reaction_begin = 170;
+        GCGMsgReactionEnd reaction_end = 58;
+        GCGMsgRemoveCards remove_cards = 7;
+        GCGMsgSelectOnStage select_on_stage = 9;
+        GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 542;
+        GCGMsgSkillLimitsChange skill_limits_change = 597;
+        GCGMsgSkillResult skill_result = 1;
+        GCGMsgTokenChange token_change = 10;
+        GCGMsgUpdateController update_controller = 204;
+        GCGMsgUseSkill use_skill = 2;
+        GCGMsgUseSkillEnd use_skill_end = 1779;
+        GCGMsgWaitingListChange waiting_list_change = 517;
+    }
+}
+
+import "GCGMsgAddCards.proto";
+import "GCGMsgAddDice.proto";
+import "GCGMsgCardUpdate.proto";
+import "GCGMsgCharDie.proto";
+import "GCGMsgClientPerform.proto";
+import "GCGMsgCostDice.proto";
+import "GCGMsgCostRevise.proto";
+import "GCGMsgDiceReroll.proto";
+import "GCGMsgDiceRoll.proto";
+import "GCGMsgDuelDataChange.proto";
+import "GCGMsgGameOver.proto";
+import "GCGMsgModifyAdd.proto";
+import "GCGMsgModifyRemove.proto";
+import "GCGMsgMoveCard.proto";
+import "GCGMsgNewCard.proto";
+import "GCGMsgNoDamageSkillResult.proto";
+import "GCGMsgOpTimer.proto";
+import "GCGMsgPass.proto";
+import "GCGMsgPhaseChange.proto";
+import "GCGMsgPhaseContinue.proto";
+import "GCGMsgPVEIntentionChange.proto";
+import "GCGMsgPVEIntentionInfo.proto";
+import "GCGMsgReactionBegin.proto";
+import "GCGMsgReactionEnd.proto";
+import "GCGMsgRemoveCards.proto";
+import "GCGMsgSelectOnStage.proto";
+import "GCGMsgSelectOnStageByEffect.proto";
+import "GCGMsgSkillLimitsChange.proto";
+import "GCGMsgSkillResult.proto";
+import "GCGMsgTokenChange.proto";
+import "GCGMsgUpdateController.proto";
+import "GCGMsgUseSkill.proto";
+import "GCGMsgUseSkillEnd.proto";
+import "GCGMsgWaitingListChange.proto";

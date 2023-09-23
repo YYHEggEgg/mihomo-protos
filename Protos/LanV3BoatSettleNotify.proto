@@ -1,0 +1,35 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message LanV3BoatSettleNotify
+{
+    uint32 begin_time = 11;
+    uint32 duration = 10;
+    bool is_gallery_succ = 3;
+    bool is_single = 13;
+    uint32 play_index = 12;
+    repeated ExhibitionDisplayInfo score_list = 14;
+    repeated LanV3BoatSettleInfo settle_info_list = 7;
+    uint32 stage_type = 5;
+    repeated uint32 winner_uid_list = 9;
+}
+
+import "ExhibitionDisplayInfo.proto";
+import "LanV3BoatSettleInfo.proto";

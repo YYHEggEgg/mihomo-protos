@@ -1,0 +1,42 @@
+// mihomo-protos - Public protocol APIs for miHomo software, open-sourced for compatibility.
+// Copyright (c) 2023 YYHEggEgg
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+package miHomo.Protos;
+
+message PlayerEnterSceneNotify
+{
+    uint32 dungeon_id = 11;
+    uint32 enter_reason = 74;
+    uint32 enter_scene_token = 2;
+    bool is_first_login_enter_scene = 10;
+    bool is_skip_ui = 317;
+    Vector pos = 13;
+    Vector prev_pos = 12;
+    uint32 prev_scene_id = 4;
+    uint64 scene_begin_time = 15;
+    uint32 scene_id = 3;
+    repeated uint32 scene_tag_id_list = 8;
+    string scene_transaction = 647;
+    uint32 target_uid = 1;
+    EnterType type = 9;
+    uint32 world_level = 5;
+    uint32 world_type = 1090;
+}
+
+import "EnterType.proto";
+import "Vector.proto";

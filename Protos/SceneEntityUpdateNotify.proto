@@ -23,15 +23,6 @@ message SceneEntityUpdateNotify
     VisionType appear_type = 13;
     repeated SceneEntityInfo entity_list = 5;
     uint32 param = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 3412;
-    }
 }
 
 import "SceneEntityInfo.proto";

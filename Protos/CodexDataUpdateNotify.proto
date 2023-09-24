@@ -23,15 +23,6 @@ message CodexDataUpdateNotify
     uint32 id = 8;
     CodexType type = 11;
     uint32 weapon_max_promote_level = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4207;
-    }
 }
 
 import "CodexType.proto";

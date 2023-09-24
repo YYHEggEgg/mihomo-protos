@@ -25,15 +25,6 @@ message ViewCodexRsp
     repeated uint32 recent_viewed_pushtips_list = 3;
     int32 retcode = 12;
     repeated CodexTypeData type_data_list = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4201;
-    }
 }
 
 import "CodexTypeData.proto";

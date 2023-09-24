@@ -21,15 +21,6 @@ package miHomo.Protos;
 message TowerCurLevelRecordChangeNotify
 {
     TowerCurLevelRecord cur_level_record = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 2412;
-    }
 }
 
 import "TowerCurLevelRecord.proto";

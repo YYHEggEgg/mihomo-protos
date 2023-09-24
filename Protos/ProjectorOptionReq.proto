@@ -23,15 +23,6 @@ message ProjectorOptionReq
     uint32 entity_id = 10;
     uint32 op_type = 7;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 863;
-    }
     enum ProjectorOpType
     {
         PROJECTOR_OP_NONE = 0;

@@ -22,15 +22,6 @@ message PlayerRechargeDataNotify
 {
     uint32 card_product_remain_days = 12;
     repeated ProductPriceTier product_price_tier_list = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4102;
-    }
 }
 
 import "ProductPriceTier.proto";

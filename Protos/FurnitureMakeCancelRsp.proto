@@ -23,15 +23,6 @@ message FurnitureMakeCancelRsp
     FurnitureMakeSlot furniture_make_slot = 15;
     uint32 make_id = 2;
     int32 retcode = 3;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4683;
-    }
 }
 
 import "FurnitureMakeSlot.proto";

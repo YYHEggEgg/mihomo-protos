@@ -29,15 +29,6 @@ message LanternRiteStartFireworksReformRsp
     repeated LanternRiteFireworksReformSkillInfo skill_info_list = 8;
     uint32 stage_id = 12;
     uint32 stamina_value = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8862;
-    }
 }
 
 import "LanternRiteFireworksReformFactorInfo.proto";

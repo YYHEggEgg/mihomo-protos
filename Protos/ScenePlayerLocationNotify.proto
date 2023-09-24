@@ -23,15 +23,6 @@ message ScenePlayerLocationNotify
     repeated PlayerLocationInfo player_loc_list = 14;
     uint32 scene_id = 9;
     repeated VehicleLocationInfo vehicle_loc_list = 3;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 1;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 248;
-    }
 }
 
 import "PlayerLocationInfo.proto";

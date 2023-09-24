@@ -41,14 +41,6 @@ message BeginCameraSceneLookNotify
     float screen_x = 3;
     float screen_y = 15;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 270;
-    }
     enum KeepRotType
     {
         KEEP_ROT_X = 0;

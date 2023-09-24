@@ -24,16 +24,6 @@ message RogueDiaryTiredAvatarNotify
     repeated RogueDiaryAvatar optianal_tired_avatar_list = 10;
     uint32 reserve_avatar_num = 6;
     uint32 tired_type = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 8514;
-    }
 }
 
 import "RogueDiaryAvatar.proto";

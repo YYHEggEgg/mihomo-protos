@@ -28,13 +28,4 @@ message WindFieldGalleryInfoNotify
     uint32 element_ball_num = 14;
     uint32 killed_monster_num = 7;
     uint32 show_id = 3;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5526;
-    }
 }

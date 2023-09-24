@@ -25,15 +25,6 @@ message EnterCustomDungeonRsp
     int32 retcode = 10;
 
     map<uint32, uint32> room_cost_map = 6;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 6218;
-    }
 }
 
 import "CustomDungeon.proto";

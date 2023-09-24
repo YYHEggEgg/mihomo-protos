@@ -27,13 +27,4 @@ message GalleryFallCatchNotify
     uint32 time_cost = 11;
 
     map<uint32, uint32> ball_catch_count_map = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5507;
-    }
 }

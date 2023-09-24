@@ -24,13 +24,4 @@ message PlantFlowerGetCanGiveFriendFlowerRsp
     uint32 schedule_id = 4;
 
     map<uint32, uint32> flower_num_map = 6;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8766;
-    }
 }

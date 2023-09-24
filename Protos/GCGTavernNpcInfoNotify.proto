@@ -23,15 +23,6 @@ message GCGTavernNpcInfoNotify
     GCGTavernNpcInfo character_npc = 5;
     repeated GCGTavernNpcInfo const_npc_list = 15;
     repeated GCGTavernNpcInfo week_npc_list = 1;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 7290;
-    }
 }
 
 import "GCGTavernNpcInfo.proto";

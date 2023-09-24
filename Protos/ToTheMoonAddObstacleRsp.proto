@@ -23,15 +23,6 @@ message ToTheMoonAddObstacleRsp
     DynamicNodes dynamic_nodes = 2;
     int32 query_id = 13;
     int32 retcode = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 6103;
-    }
 }
 
 import "DynamicNodes.proto";

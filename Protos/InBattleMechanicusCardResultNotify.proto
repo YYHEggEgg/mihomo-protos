@@ -27,15 +27,6 @@ message InBattleMechanicusCardResultNotify
     uint32 wait_seconds = 6;
 
     map<uint32, uint32> player_confirmed_card_map = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5397;
-    }
 }
 
 import "InBattleMechanicusCardInfo.proto";

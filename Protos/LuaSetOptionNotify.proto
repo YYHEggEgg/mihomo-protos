@@ -23,14 +23,6 @@ message LuaSetOptionNotify
     string lua_set_param = 8;
     LuaOptionType option_type = 10;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 316;
-    }
     enum LuaOptionType
     {
         LUA_OPTION_NONE = 0;

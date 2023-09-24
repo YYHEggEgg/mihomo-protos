@@ -26,15 +26,6 @@ message GetAllMailResultNotify
     int32 retcode = 14;
     uint32 total_page_count = 4;
     string transaction = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 1481;
-    }
 }
 
 import "MailData.proto";

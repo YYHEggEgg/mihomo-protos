@@ -22,14 +22,4 @@ message MechanicusUnlockGearReq
 {
     uint32 gear_id = 6;
     uint32 mechanicus_id = 7;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 3903;
-    }
 }

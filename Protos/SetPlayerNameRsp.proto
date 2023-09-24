@@ -22,13 +22,4 @@ message SetPlayerNameRsp
 {
     string nick_name = 14;
     int32 retcode = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 122;
-    }
 }

@@ -23,14 +23,4 @@ message PlayerGameTimeNotify
     uint32 game_time = 3;
     bool is_home = 13;
     uint32 uid = 7;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 131;
-    }
 }

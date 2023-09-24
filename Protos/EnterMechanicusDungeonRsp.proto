@@ -24,13 +24,4 @@ message EnterMechanicusDungeonRsp
     uint32 dungeon_id = 11;
     int32 retcode = 6;
     uint32 wrong_uid = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 3975;
-    }
 }

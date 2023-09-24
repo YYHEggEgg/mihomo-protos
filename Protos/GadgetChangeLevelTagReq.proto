@@ -23,16 +23,6 @@ message GadgetChangeLevelTagReq
     CustomGadgetTreeInfo combination_info = 11;
     uint32 gadget_entity_id = 10;
     uint32 level_tag_id = 14;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 843;
-    }
 }
 
 import "CustomGadgetTreeInfo.proto";

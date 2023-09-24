@@ -23,16 +23,6 @@ message VintageMarketStoreChooseStrategyReq
     uint32 store_id = 6;
     repeated VintageMarketStoreOpInfo store_op_list = 9;
     repeated uint32 strategy_list = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 21248;
-    }
 }
 
 import "VintageMarketStoreOpInfo.proto";

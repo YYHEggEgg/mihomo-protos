@@ -62,16 +62,6 @@ message PlayerLoginReq
     uint32 target_uid = 11;
     string token = 15;
     TrackingIOInfo tracking_io_info = 1660;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 112;
-    }
 }
 
 import "AdjustTrackingInfo.proto";

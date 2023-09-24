@@ -22,13 +22,4 @@ message MainCoopFailNotify
 {
     uint32 chapter_id = 15;
     string textmap_id = 7;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 1951;
-    }
 }

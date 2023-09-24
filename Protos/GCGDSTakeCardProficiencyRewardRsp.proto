@@ -23,13 +23,4 @@ message GCGDSTakeCardProficiencyRewardRsp
     uint32 card_id = 7;
     int32 retcode = 8;
     uint32 reward_index = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 7889;
-    }
 }

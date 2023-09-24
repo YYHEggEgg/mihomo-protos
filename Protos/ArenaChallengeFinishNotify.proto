@@ -24,15 +24,6 @@ message ArenaChallengeFinishNotify
     uint32 arena_challenge_level = 13;
     repeated ArenaChallengeChildChallengeInfo child_challenge_list = 2;
     bool is_success = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 2030;
-    }
 }
 
 import "ArenaChallengeChildChallengeInfo.proto";

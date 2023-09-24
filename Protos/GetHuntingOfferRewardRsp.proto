@@ -23,15 +23,6 @@ message GetHuntingOfferRewardRsp
     uint32 city_id = 3;
     HuntingPair hunting_pair = 14;
     int32 retcode = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4331;
-    }
 }
 
 import "HuntingPair.proto";

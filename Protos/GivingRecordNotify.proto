@@ -21,15 +21,6 @@ package miHomo.Protos;
 message GivingRecordNotify
 {
     repeated GivingRecord giving_record_list = 14;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 116;
-    }
 }
 
 import "GivingRecord.proto";

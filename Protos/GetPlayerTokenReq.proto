@@ -40,14 +40,4 @@ message GetPlayerTokenReq
     string psn_region = 4;
     uint32 sub_channel_id = 8;
     uint32 uid = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 172;
-    }
 }

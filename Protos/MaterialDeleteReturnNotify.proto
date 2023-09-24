@@ -24,15 +24,6 @@ message MaterialDeleteReturnNotify
 
     map<uint32, uint32> delete_material_map = 6;
     map<uint32, uint32> return_item_map = 5;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 661;
-    }
 }
 
 import "MaterialDeleteReturnType.proto";

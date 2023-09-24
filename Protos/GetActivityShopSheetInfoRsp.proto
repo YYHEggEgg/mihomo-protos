@@ -23,15 +23,6 @@ message GetActivityShopSheetInfoRsp
     int32 retcode = 13;
     repeated ActivityShopSheetInfo sheet_info_list = 6;
     uint32 shop_type = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 790;
-    }
 }
 
 import "ActivityShopSheetInfo.proto";

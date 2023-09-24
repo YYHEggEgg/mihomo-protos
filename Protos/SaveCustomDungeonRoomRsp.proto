@@ -23,15 +23,6 @@ message SaveCustomDungeonRoomRsp
     repeated CustomDungeonBlock error_block_list = 9;
     int32 retcode = 12;
     uint32 room_id = 14;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 6207;
-    }
 }
 
 import "CustomDungeonBlock.proto";

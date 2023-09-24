@@ -23,15 +23,6 @@ message FishAttractNotify
     repeated uint32 fish_id_list = 3;
     Vector pos = 9;
     uint32 uid = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5837;
-    }
 }
 
 import "Vector.proto";

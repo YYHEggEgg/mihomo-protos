@@ -27,13 +27,4 @@ message AvatarUpgradeRsp
 
     map<uint32, float> cur_fight_prop_map = 4;
     map<uint32, float> old_fight_prop_map = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 1701;
-    }
 }

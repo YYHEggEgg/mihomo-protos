@@ -24,13 +24,4 @@ message GCGInviteGuestBattleRsp
     uint32 punish_end_time = 9;
     int32 retcode = 3;
     uint32 uid = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 7251;
-    }
 }

@@ -24,15 +24,6 @@ message CustomDungeonRecoverNotify
     EnterCustomDungeonType enter_type = 14;
     repeated uint32 official_black_coin_list = 12;
     TryCustomDungeonType try_type = 3;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 6217;
-    }
 }
 
 import "CustomDungeon.proto";

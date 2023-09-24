@@ -22,15 +22,6 @@ message OpActivityStateNotify
 {
     repeated uint32 finished_bonus_activity_id_list = 14;
     repeated OpActivityTagBriefInfo opened_op_activity_info_list = 13;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 2572;
-    }
 }
 
 import "OpActivityTagBriefInfo.proto";

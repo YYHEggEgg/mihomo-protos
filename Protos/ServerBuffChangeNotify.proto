@@ -26,14 +26,6 @@ message ServerBuffChangeNotify
     ServerBuffChangeType server_buff_change_type = 7;
     repeated ServerBuff server_buff_list = 11;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 361;
-    }
     enum ServerBuffChangeType
     {
         ADD_SERVER_BUFF = 0;

@@ -26,13 +26,4 @@ message DungeonChallengeBeginNotify
     uint32 group_id = 4;
     repeated uint32 param_list = 14;
     repeated uint32 uid_list = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 947;
-    }
 }

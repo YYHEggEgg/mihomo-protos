@@ -25,13 +25,4 @@ message ScenePointUnlockNotify
     repeated uint32 point_list = 13;
     uint32 scene_id = 6;
     repeated uint32 unhide_point_list = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 247;
-    }
 }

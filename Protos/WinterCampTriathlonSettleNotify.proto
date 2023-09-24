@@ -28,13 +28,4 @@ message WinterCampTriathlonSettleNotify
     uint32 race_id = 15;
     uint32 remain_time = 4;
     uint32 score = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8342;
-    }
 }

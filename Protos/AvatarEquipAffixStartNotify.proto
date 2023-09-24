@@ -22,15 +22,6 @@ message AvatarEquipAffixStartNotify
 {
     uint64 avatar_guid = 4;
     AvatarEquipAffixInfo equip_affix_info = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 1662;
-    }
 }
 
 import "AvatarEquipAffixInfo.proto";

@@ -24,16 +24,6 @@ message FishCastRodReq
     uint32 rod_entity_id = 8;
     uint32 Unk3300_ICALEIBJCDA = 13;
     uint32 Unk3300_PJFHEDDFOBM = 7;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 5827;
-    }
 }
 
 import "Vector.proto";

@@ -22,14 +22,4 @@ message FungusFighterTrainingSelectFungusReq
 {
     repeated uint32 backup_fungus_id_list = 3;
     repeated uint32 fight_fungus_id_list = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 24249;
-    }
 }

@@ -24,15 +24,6 @@ message IslandPartySailInfoNotify
     uint32 kill_monster_count = 6;
     uint32 progress = 9;
     IslandPartySailStage stage = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5544;
-    }
 }
 
 import "IslandPartySailStage.proto";

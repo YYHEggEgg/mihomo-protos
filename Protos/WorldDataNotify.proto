@@ -22,15 +22,6 @@ message WorldDataNotify
 {
     map<uint32, PropValue> world_prop_map = 6;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 3436;
-    }
     enum DataType
     {
         DATA_TYPE_NONE = 0;

@@ -24,13 +24,4 @@ message ChannelerSlabTakeoffBuffRsp
     bool is_mp = 10;
     int32 retcode = 8;
     uint32 slot_id = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8034;
-    }
 }

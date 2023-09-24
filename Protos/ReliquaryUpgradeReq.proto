@@ -23,16 +23,6 @@ message ReliquaryUpgradeReq
     repeated uint64 food_reliquary_guid_list = 3;
     repeated ItemParam item_param_list = 15;
     uint64 target_reliquary_guid = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 644;
-    }
 }
 
 import "ItemParam.proto";

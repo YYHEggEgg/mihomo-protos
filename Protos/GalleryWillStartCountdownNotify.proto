@@ -24,15 +24,6 @@ message GalleryWillStartCountdownNotify
     uint32 gallery_id = 13;
     bool is_end = 6;
     GalleryStartSource start_source = 14;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5505;
-    }
 }
 
 import "GalleryStartSource.proto";

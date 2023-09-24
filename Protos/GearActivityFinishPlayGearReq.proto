@@ -24,16 +24,6 @@ message GearActivityFinishPlayGearReq
     bool is_success = 8;
     uint32 level_id = 3;
     bool use_clue = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 20236;
-    }
 }
 
 import "GearColumnInfo.proto";

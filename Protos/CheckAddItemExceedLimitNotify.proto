@@ -26,14 +26,6 @@ message CheckAddItemExceedLimitNotify
     ItemExceedLimitMsgType msg_type = 6;
     uint32 reason = 9;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 697;
-    }
     enum ItemExceedLimitMsgType
     {
         ITEM_EXCEED_LIMIT_MSG_TYPE_DEFAULT = 0;

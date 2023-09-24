@@ -26,15 +26,6 @@ message PlayerDataNotify
     uint64 server_time = 1;
 
     map<uint32, PropValue> prop_map = 4;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 147;
-    }
 }
 
 import "PropValue.proto";

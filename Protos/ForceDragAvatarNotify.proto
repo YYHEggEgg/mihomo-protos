@@ -26,15 +26,6 @@ message ForceDragAvatarNotify
     uint32 scene_time = 12;
     uint64 Unk3300_AFLCLLFDPBD = 5;
     uint64 Unk3300_IMFNNPGHKJJ = 3;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 3008;
-    }
 }
 
 import "MotionInfo.proto";

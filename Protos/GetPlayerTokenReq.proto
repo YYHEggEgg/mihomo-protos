@@ -40,14 +40,4 @@ message GetPlayerTokenReq
     string Unk3300_PHNOHCKIHIA = 3;
     string Unk3300_PKONAOIDNFK = 13;
     uint32 Unk3300_PMGFBMJNNCL = 1;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 179;
-    }
 }

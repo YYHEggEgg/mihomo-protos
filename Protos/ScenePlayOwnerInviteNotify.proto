@@ -23,13 +23,4 @@ message ScenePlayOwnerInviteNotify
     uint32 invite_cd = 12;
     bool is_remain_reward = 14;
     uint32 play_id = 6;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4393;
-    }
 }

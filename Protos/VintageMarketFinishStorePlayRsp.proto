@@ -31,13 +31,4 @@ message VintageMarketFinishStorePlayRsp
     repeated uint32 Unk3300_OCIMKEPJOOL = 3;
 
     map<uint32, uint32> store_income_map = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 20941;
-    }
 }

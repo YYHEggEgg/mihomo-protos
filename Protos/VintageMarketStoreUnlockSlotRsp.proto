@@ -23,13 +23,4 @@ message VintageMarketStoreUnlockSlotRsp
     int32 retcode = 15;
     uint32 slot_count = 3;
     uint32 store_id = 14;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 23327;
-    }
 }

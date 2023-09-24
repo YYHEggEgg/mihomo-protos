@@ -24,16 +24,6 @@ message HomeCreateBlueprintReq
     HomeSceneArrangementInfo scene_arrangement_info = 4;
     string server_share_code = 5;
     uint32 slot_id = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 4539;
-    }
 }
 
 import "HomeSceneArrangementInfo.proto";

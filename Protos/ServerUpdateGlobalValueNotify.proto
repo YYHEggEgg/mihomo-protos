@@ -26,14 +26,6 @@ message ServerUpdateGlobalValueNotify
     UpdateType update_type = 9;
     float value = 3;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 1148;
-    }
     enum UpdateType
     {
         UPDATE_TYPE_INVALID = 0;

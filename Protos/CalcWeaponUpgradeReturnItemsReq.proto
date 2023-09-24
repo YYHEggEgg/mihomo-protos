@@ -23,16 +23,6 @@ message CalcWeaponUpgradeReturnItemsReq
     repeated uint64 food_weapon_guid_list = 12;
     repeated ItemParam item_param_list = 8;
     uint64 target_weapon_guid = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 666;
-    }
 }
 
 import "ItemParam.proto";

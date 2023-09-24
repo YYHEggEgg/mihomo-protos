@@ -26,15 +26,6 @@ message SumoEnterDungeonNotify
     uint32 Unk3300_BNJBIGHIJOC = 5;
     uint32 Unk3300_CBAMLHDMKJF = 7;
     uint32 Unk3300_DJBJACGHGDM = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8297;
-    }
 }
 
 import "SumoDungeonTeam.proto";

@@ -25,15 +25,6 @@ message ChapterStateNotify
     NeedBeginTime need_begin_time = 13;
     NeedPlayerLevel need_player_level = 5;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 442;
-    }
-
     message NeedBeginTime
     {
         uint32 config_need_begin_time = 14;

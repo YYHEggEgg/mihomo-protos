@@ -28,13 +28,4 @@ message WinterCampTriathlonSettleNotify
     uint32 Unk3300_ACDOMBHMNJG = 11;
     uint32 Unk3300_EMNKJGKNCMP = 5;
     uint32 Unk3300_OEFOGONENFN = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8194;
-    }
 }

@@ -22,15 +22,6 @@ message ChallengeRecordNotify
 {
     repeated ChallengeRecord challenge_record_list = 9;
     uint32 group_id = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 907;
-    }
 }
 
 import "ChallengeRecord.proto";

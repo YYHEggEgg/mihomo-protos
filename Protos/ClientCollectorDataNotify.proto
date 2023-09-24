@@ -21,15 +21,6 @@ package miHomo.Protos;
 message ClientCollectorDataNotify
 {
     repeated ClientCollectorData client_collector_data_list = 1;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4252;
-    }
 }
 
 import "ClientCollectorData.proto";

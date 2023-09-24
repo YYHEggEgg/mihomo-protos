@@ -26,15 +26,6 @@ message GCGStartChallengeByCheckRewardRsp
     uint32 level_id = 5;
     GCGLevelType level_type = 2;
     int32 retcode = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 7727;
-    }
 }
 
 import "GCGLevelType.proto";

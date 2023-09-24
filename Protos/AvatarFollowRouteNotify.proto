@@ -25,15 +25,6 @@ message AvatarFollowRouteNotify
     Route route = 1;
     uint32 start_scene_time_ms = 3;
     uint32 template_id = 4;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 3256;
-    }
 }
 
 import "Route.proto";

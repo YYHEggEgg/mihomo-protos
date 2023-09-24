@@ -24,13 +24,4 @@ message TriggerRoguelikeCurseNotify
     bool is_trigger_curse = 11;
     uint32 Unk3300_LJHJIBDPBBC = 10;
     uint32 Unk3300_POLIENBCNLF = 7;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8965;
-    }
 }

@@ -26,15 +26,6 @@ message StoreWeightLimitNotify
     StoreType store_type = 9;
     uint32 weapon_count_limit = 1;
     uint32 weight_limit = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 630;
-    }
 }
 
 import "StoreType.proto";

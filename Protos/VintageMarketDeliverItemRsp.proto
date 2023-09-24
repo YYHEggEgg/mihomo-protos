@@ -22,13 +22,4 @@ message VintageMarketDeliverItemRsp
 {
     int32 retcode = 9;
     uint32 trader_id = 6;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 23763;
-    }
 }

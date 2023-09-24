@@ -23,15 +23,6 @@ message GetBargainDataRsp
     uint32 bargain_id = 4;
     int32 retcode = 2;
     BargainSnapshot snapshot = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 472;
-    }
 }
 
 import "BargainSnapshot.proto";

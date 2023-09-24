@@ -23,13 +23,4 @@ message QuestDestroyNpcRsp
     uint32 npc_id = 14;
     uint32 parent_quest_id = 8;
     int32 retcode = 13;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 489;
-    }
 }

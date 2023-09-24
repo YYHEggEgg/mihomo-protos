@@ -24,15 +24,6 @@ message SealBattleBeginNotify
     uint32 seal_entity_id = 7;
     uint32 seal_max_progress = 13;
     uint32 seal_radius = 5;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 226;
-    }
 }
 
 import "SealBattleType.proto";

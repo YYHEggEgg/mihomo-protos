@@ -23,13 +23,4 @@ message IrodoriEditFlowerCombinationRsp
     int32 retcode = 2;
     bool Unk3300_DBBGPOMDKPK = 9;
     bool Unk3300_IAPLHBKJLBF = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8454;
-    }
 }

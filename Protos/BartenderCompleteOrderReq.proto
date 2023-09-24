@@ -27,16 +27,6 @@ message BartenderCompleteOrderReq
     uint32 Unk3300_LONHKJFDOND = 5;
     uint32 Unk3300_NKMHHHHGHIF = 6;
     uint32 Unk3300_POEGPFJLNGB = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 8880;
-    }
 }
 
 import "ItemParam.proto";

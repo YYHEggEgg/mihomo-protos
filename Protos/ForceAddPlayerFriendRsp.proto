@@ -23,15 +23,6 @@ message ForceAddPlayerFriendRsp
     int32 retcode = 13;
     FriendBrief target_friend_brief = 3;
     uint32 target_uid = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4004;
-    }
 }
 
 import "FriendBrief.proto";

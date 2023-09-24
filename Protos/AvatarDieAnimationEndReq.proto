@@ -23,16 +23,6 @@ message AvatarDieAnimationEndReq
     uint64 die_guid = 13;
     Vector reborn_pos = 14;
     uint32 skill_id = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 1695;
-    }
 }
 
 import "Vector.proto";

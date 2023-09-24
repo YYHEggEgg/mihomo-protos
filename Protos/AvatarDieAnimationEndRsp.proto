@@ -23,13 +23,4 @@ message AvatarDieAnimationEndRsp
     uint64 die_guid = 7;
     int32 retcode = 12;
     uint32 skill_id = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 1604;
-    }
 }

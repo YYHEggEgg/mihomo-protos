@@ -33,16 +33,6 @@ message MassiveEntityElementOpBatchNotify
         ShapeBox shape_box = 13;
         ShapeSphere shape_sphere = 14;
     }
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 363;
-    }
 }
 
 import "ShapeBox.proto";

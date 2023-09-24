@@ -22,15 +22,6 @@ message ActivityDisableTransferPointInteractionNotify
 {
     bool is_disable = 13;
     Uint32Pair scene_point_pair = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8029;
-    }
 }
 
 import "Uint32Pair.proto";

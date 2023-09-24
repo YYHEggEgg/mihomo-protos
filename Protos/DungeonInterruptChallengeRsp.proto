@@ -24,13 +24,4 @@ message DungeonInterruptChallengeRsp
     uint32 challenge_index = 14;
     uint32 group_id = 10;
     int32 retcode = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 993;
-    }
 }

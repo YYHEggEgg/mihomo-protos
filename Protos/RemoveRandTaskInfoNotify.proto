@@ -24,14 +24,6 @@ message RemoveRandTaskInfoNotify
     uint32 rand_task_id = 10;
     FinishReason reason = 13;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 198;
-    }
     enum FinishReason
     {
         FINISH_REASON_DEFAULT = 0;

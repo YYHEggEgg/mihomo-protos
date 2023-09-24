@@ -23,13 +23,4 @@ message EnterFungusFighterPlotDungeonRsp
     uint32 dungeon_id = 8;
     repeated uint32 fungus_id_list = 14;
     int32 retcode = 4;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 20791;
-    }
 }

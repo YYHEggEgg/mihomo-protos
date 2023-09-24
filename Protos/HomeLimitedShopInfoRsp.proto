@@ -22,15 +22,6 @@ message HomeLimitedShopInfoRsp
 {
     int32 retcode = 9;
     HomeLimitedShopInfo shop_info = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4739;
-    }
 }
 
 import "HomeLimitedShopInfo.proto";

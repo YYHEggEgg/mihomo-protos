@@ -24,15 +24,6 @@ message EvtAvatarLockChairRsp
     uint32 entity_id = 9;
     Vector position = 15;
     int32 retcode = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 309;
-    }
 }
 
 import "Vector.proto";

@@ -23,16 +23,6 @@ message GCGStartChallengeByCheckRewardReq
     uint32 config_id = 5;
     uint32 level_id = 13;
     GCGLevelType level_type = 3;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 7982;
-    }
 }
 
 import "GCGLevelType.proto";

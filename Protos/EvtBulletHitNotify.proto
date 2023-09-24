@@ -29,16 +29,6 @@ message EvtBulletHitNotify
     Vector hit_normal = 9;
     Vector hit_point = 8;
     uint32 single_bullet_id = 4;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 348;
-    }
 }
 
 import "ForwardType.proto";

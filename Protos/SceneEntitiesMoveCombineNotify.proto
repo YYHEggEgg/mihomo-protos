@@ -21,13 +21,6 @@ package miHomo.Protos;
 message SceneEntitiesMoveCombineNotify
 {
     repeated EntityMoveInfo entity_move_info_list = 14;
-
-    enum CmdId
-    {
-        NONE = 0;
-        ENET_CHANNEL_ID = 1;
-        CMD_ID = 3452;
-    }
 }
 
 import "EntityMoveInfo.proto";

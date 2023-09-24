@@ -24,15 +24,6 @@ message StartRogueDiaryPlayRsp
     repeated uint32 rand_card_list = 2;
     int32 retcode = 6;
     repeated RogueDiaryAvatar trial_avatar_list = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8881;
-    }
 }
 
 import "RogueDiaryAvatar.proto";

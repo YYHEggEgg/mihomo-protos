@@ -25,14 +25,6 @@ message QueryPathRsp
     PathStatusType query_status = 3;
     int32 retcode = 10;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 2330;
-    }
     enum PathStatusType
     {
         PATH_STATUS_TYPE_FAIL = 0;

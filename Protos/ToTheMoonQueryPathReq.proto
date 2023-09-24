@@ -38,15 +38,6 @@ message ToTheMoonQueryPathReq
         A_STAR_METHOD_ADAPTIVE = 2;
         A_STAR_METHOD_INFLECTION = 3;
     }
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 6179;
-    }
     enum FilterType
     {
         FILTER_TYPE_ALL = 0;

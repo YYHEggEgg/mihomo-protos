@@ -28,15 +28,6 @@ message ItemAddHintNotify
     bool Unk3300_FLIKEBJINCL = 5;
     bool Unk3300_KIOMJNHFMDE = 6;
     bool Unk3300_NIJLGEHNBNC = 4;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 700;
-    }
 }
 
 import "ItemHint.proto";

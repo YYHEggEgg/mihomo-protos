@@ -26,15 +26,6 @@ message GadgetPlayStopNotify
     uint32 play_type = 3;
     uint32 score = 5;
     repeated GadgetPlayUidInfo uid_info_list = 1;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 857;
-    }
 }
 
 import "GadgetPlayUidInfo.proto";

@@ -23,15 +23,6 @@ message HomeSeekFurnitureGalleryScoreNotify
     uint32 gallery_id = 13;
     GalleryStopReason reason = 7;
     HomeSeekFurnitureOneRecord record = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4723;
-    }
 }
 
 import "GalleryStopReason.proto";

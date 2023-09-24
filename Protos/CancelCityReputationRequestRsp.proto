@@ -23,13 +23,4 @@ message CancelCityReputationRequestRsp
     uint32 city_id = 7;
     uint32 request_id = 5;
     int32 retcode = 14;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 2827;
-    }
 }

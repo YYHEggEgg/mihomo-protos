@@ -22,15 +22,6 @@ message SearchCustomDungeonRsp
 {
     OtherCustomDungeonBrief custom_dungeon_brief = 8;
     int32 retcode = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 6239;
-    }
 }
 
 import "OtherCustomDungeonBrief.proto";

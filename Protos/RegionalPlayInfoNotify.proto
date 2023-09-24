@@ -25,15 +25,6 @@ message RegionalPlayInfoNotify
     string play_name = 5;
     uint32 play_type = 3;
     repeated RegionalPlayVar var_list = 13;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 6292;
-    }
 }
 
 import "RegionalPlayVar.proto";

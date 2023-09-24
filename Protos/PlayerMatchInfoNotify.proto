@@ -29,15 +29,6 @@ message PlayerMatchInfoNotify
     MatchType match_type = 13;
     uint32 mechanicus_difficult_level = 15;
     uint32 mp_play_id = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4172;
-    }
 }
 
 import "MatchType.proto";

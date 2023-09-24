@@ -29,15 +29,6 @@ message QuickUseWidgetRsp
         OneoffGatherPointDetectorData detector_data = 14;
         SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;
     }
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4265;
-    }
 }
 
 import "ClientCollectorData.proto";

@@ -23,15 +23,6 @@ message RegionSearchChangeRegionNotify
     RegionEvent event = 11;
     uint32 region_id = 6;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 5641;
-    }
     enum RegionEvent
     {
         REGION_EVENT_NONE = 0;

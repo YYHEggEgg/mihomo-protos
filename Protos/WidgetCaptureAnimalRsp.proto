@@ -24,15 +24,6 @@ message WidgetCaptureAnimalRsp
     uint32 material_id = 7;
     Vector pos = 10;
     int32 retcode = 4;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4296;
-    }
 }
 
 import "Vector.proto";

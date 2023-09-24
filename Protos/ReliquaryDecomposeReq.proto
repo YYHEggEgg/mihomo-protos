@@ -23,14 +23,4 @@ message ReliquaryDecomposeReq
     uint32 config_id = 4;
     repeated uint64 guid_list = 13;
     uint32 target_count = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 631;
-    }
 }

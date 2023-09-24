@@ -24,13 +24,4 @@ message SeaLampContributeItemRsp
     int32 retcode = 4;
     uint32 Unk3300_AIINHBHNHOI = 11;
     uint32 Unk3300_LPHALOGLGAL = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 2116;
-    }
 }

@@ -23,16 +23,6 @@ message GetInvestigationMonsterRsp
     bool is_for_mark = 2;
     repeated InvestigationMonster monster_list = 10;
     int32 retcode = 1;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 1910;
-    }
 }
 
 import "InvestigationMonster.proto";

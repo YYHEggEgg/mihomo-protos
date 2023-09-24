@@ -24,14 +24,4 @@ message BartenderLevelProgressNotify
     bool is_new_record = 9;
     uint32 level_id = 15;
     uint32 score = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 8756;
-    }
 }

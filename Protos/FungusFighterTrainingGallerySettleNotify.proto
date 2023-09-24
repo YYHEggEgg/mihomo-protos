@@ -28,15 +28,6 @@ message FungusFighterTrainingGallerySettleNotify
     GalleryStopReason reason = 5;
     uint32 settle_round = 15;
     uint32 total_used_time = 4;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 23931;
-    }
 }
 
 import "GalleryStopReason.proto";

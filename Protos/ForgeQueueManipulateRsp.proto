@@ -25,15 +25,6 @@ message ForgeQueueManipulateRsp
     repeated ItemParam output_item_list = 9;
     int32 retcode = 1;
     repeated ItemParam return_item_list = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 656;
-    }
 }
 
 import "ForgeQueueManipulateType.proto";

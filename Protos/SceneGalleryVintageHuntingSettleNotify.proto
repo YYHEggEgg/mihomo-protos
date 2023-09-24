@@ -32,15 +32,6 @@ message SceneGalleryVintageHuntingSettleNotify
         VintageHuntingSecondStageSettleInfo second_stage_info = 10;
         VintageHuntingThirdStageSettleInfo third_stage_info = 8;
     }
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 20324;
-    }
 }
 
 import "VintageHuntingFirstStageSettleInfo.proto";

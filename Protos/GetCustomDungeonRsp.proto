@@ -23,15 +23,6 @@ message GetCustomDungeonRsp
     CustomDungeonBanInfo ban_info = 14;
     repeated CustomDungeonBrief brief_list = 5;
     int32 retcode = 10;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 6227;
-    }
 }
 
 import "CustomDungeonBanInfo.proto";

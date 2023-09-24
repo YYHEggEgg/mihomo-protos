@@ -25,13 +25,4 @@ message GetCityReputationMapInfoRsp
     int32 retcode = 11;
     repeated uint32 reward_city_list = 3;
     repeated uint32 unlock_hunting_city_list = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 2848;
-    }
 }

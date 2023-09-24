@@ -22,14 +22,4 @@ message ReliquaryPromoteReq
 {
     uint64 item_guid = 10;
     uint64 target_guid = 13;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 627;
-    }
 }

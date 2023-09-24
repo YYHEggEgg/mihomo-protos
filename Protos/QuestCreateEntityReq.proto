@@ -24,16 +24,6 @@ message QuestCreateEntityReq
     bool is_rewind = 3;
     uint32 parent_quest_id = 9;
     uint32 quest_id = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 499;
-    }
 }
 
 import "CreateEntityInfo.proto";

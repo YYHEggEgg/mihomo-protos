@@ -25,14 +25,6 @@ message PlayerApplyEnterHomeResultNotify
     string target_nickname = 7;
     uint32 target_uid = 12;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4468;
-    }
     enum Reason
     {
         PLAYER_JUDGE = 0;

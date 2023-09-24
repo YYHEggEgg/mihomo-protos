@@ -25,15 +25,6 @@ message BuyGoodsRsp
     repeated ShopGoods goods_list = 5;
     int32 retcode = 2;
     uint32 shop_type = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 735;
-    }
 }
 
 import "ShopGoods.proto";

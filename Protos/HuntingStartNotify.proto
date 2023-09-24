@@ -24,15 +24,6 @@ message HuntingStartNotify
     uint32 fail_time = 15;
     HuntingPair hunting_pair = 3;
     bool is_final = 8;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4329;
-    }
 }
 
 import "HuntingPair.proto";

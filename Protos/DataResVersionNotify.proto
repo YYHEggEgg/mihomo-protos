@@ -30,14 +30,6 @@ message DataResVersionNotify
     DataResVersionOpType op_type = 12;
     ResVersionConfig res_version_config = 9;
 
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 167;
-    }
     enum DataResVersionOpType
     {
         OP_TYPE_NONE = 0;

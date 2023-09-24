@@ -22,13 +22,4 @@ message DraftOwnerTwiceConfirmNotify
 {
     uint32 draft_id = 14;
     uint32 twice_confirm_deadline_time = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5499;
-    }
 }

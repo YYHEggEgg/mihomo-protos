@@ -28,15 +28,6 @@ message WorldPlayerDieNotify
         uint32 gadget_id = 4;
         uint32 monster_id = 8;
     }
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 285;
-    }
 }
 
 import "PlayerDieType.proto";

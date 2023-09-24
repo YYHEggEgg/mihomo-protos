@@ -33,16 +33,6 @@ message EvtAvatarEnterFocusNotify
     bool use_auto_focus = 5;
     bool use_focus_sticky = 15;
     bool use_gyro = 11;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 304;
-    }
 }
 
 import "ForwardType.proto";

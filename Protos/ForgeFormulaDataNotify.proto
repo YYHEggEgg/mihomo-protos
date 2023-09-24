@@ -22,13 +22,4 @@ message ForgeFormulaDataNotify
 {
     uint32 forge_id = 13;
     bool is_locked = 15;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 689;
-    }
 }

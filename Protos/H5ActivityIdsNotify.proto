@@ -23,13 +23,4 @@ message H5ActivityIdsNotify
     uint32 client_red_dot_timestamp = 1;
 
     map<uint32, uint32> h5_activity_map = 12;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 5675;
-    }
 }

@@ -27,16 +27,6 @@ message WidgetDoBagReq
         WidgetCreateLocationInfo location_info = 832;
         WidgetCreatorInfo widget_creator_info = 1497;
     }
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 4255;
-    }
 }
 
 import "WidgetCreateLocationInfo.proto";

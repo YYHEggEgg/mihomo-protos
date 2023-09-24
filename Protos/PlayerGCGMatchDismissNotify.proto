@@ -23,15 +23,6 @@ message PlayerGCGMatchDismissNotify
     uint32 match_id = 11;
     MatchReason reason = 5;
     repeated uint32 uid_list = 7;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 4173;
-    }
 }
 
 import "MatchReason.proto";

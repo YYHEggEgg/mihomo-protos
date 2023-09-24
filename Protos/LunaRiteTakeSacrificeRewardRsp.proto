@@ -25,13 +25,4 @@ message LunaRiteTakeSacrificeRewardRsp
     int32 retcode = 12;
     uint32 sacrifice_reward_index = 14;
     repeated uint32 sacrifice_reward_list = 2;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8397;
-    }
 }

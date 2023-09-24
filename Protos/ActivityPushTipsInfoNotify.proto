@@ -23,15 +23,6 @@ message ActivityPushTipsInfoNotify
     uint32 activity_id = 10;
     repeated ActivityPushTipsData activity_push_tips_data_list = 3;
     uint32 schedule_id = 14;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        CMD_ID = 8513;
-    }
 }
 
 import "ActivityPushTipsData.proto";

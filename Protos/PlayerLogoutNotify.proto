@@ -21,10 +21,4 @@ package miHomo.Protos;
 message PlayerLogoutNotify
 {
     int32 retcode = 13;
-
-    enum CmdId
-    {
-        NONE = 0;
-        CMD_ID = 103;
-    }
 }

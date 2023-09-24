@@ -25,16 +25,6 @@ message MiracleRingDeliverItemReq
     uint32 gadget_id = 14;
     repeated ItemParam item_param_list = 1;
     InterOpType op_type = 9;
-
-    enum CmdId
-    {
-        option allow_alias = true;
-        NONE = 0;
-        ENET_CHANNEL_ID = 0;
-        ENET_IS_RELIABLE = 1;
-        IS_ALLOW_CLIENT = 1;
-        CMD_ID = 5229;
-    }
 }
 
 import "InterOpType.proto";

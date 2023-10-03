@@ -27,15 +27,15 @@ message DebugNotify
     enum Enum
     {
         option allow_alias = true;
-        ENUM_ZERO = 0;
-        ENUM_ENET_IS_RELIABLE = 1;
-        ENUM_ENET_CHANNEL_ID = 2;
-        ENUM_CMD_ID = 101;
-        ENUM_TARGET_SERVICE = 101;
+        ZERO = 0;
+        ENET_IS_RELIABLE = 1;
+        ENET_CHANNEL_ID = 2;
+        CMD_ID = 101;
+        TARGET_SERVICE = 101;
     }
     enum Retcode
     {
-        RETCODE_SUCC = 0;
-        RETCODE_FAIL = 1;
+        SUCC = 0;
+        FAIL = 1;
     }
 }

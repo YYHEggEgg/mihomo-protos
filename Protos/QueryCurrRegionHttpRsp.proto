@@ -29,7 +29,7 @@ message QueryCurrRegionHttpRsp
 
     oneof detail
     {
-        ForceUpdateInfo force_udpate = 4;
+        ForceUpdateInfo force_update = 4;
         StopServerInfo stop_server = 5;
     }
 }

@@ -33,10 +33,10 @@ message ToTheMoonQueryPathReq
 
     enum AStarMethod
     {
-        A_STAR_METHOD_Classic = 0;
-        A_STAR_METHOD_Tendency = 1;
-        A_STAR_METHOD_Adaptive = 2;
-        A_STAR_METHOD_Inflection = 3;
+        A_STAR_METHOD_CLASSIC = 0;
+        A_STAR_METHOD_TENDENCY = 1;
+        A_STAR_METHOD_ADAPTIVE = 2;
+        A_STAR_METHOD_INFLECTION = 3;
     }
     enum CmdId
     {
@@ -49,9 +49,9 @@ message ToTheMoonQueryPathReq
     }
     enum FilterType
     {
-        FILTER_TYPE_All = 0;
-        FILTER_TYPE_Air = 1;
-        FILTER_TYPE_Water = 2;
+        FILTER_TYPE_ALL = 0;
+        FILTER_TYPE_AIR = 1;
+        FILTER_TYPE_WATER = 2;
     }
     enum OptionType
     {

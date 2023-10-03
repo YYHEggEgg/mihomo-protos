@@ -18,16 +18,24 @@ syntax = "proto3";
 
 package miHomo.Protos;
 
-message GCGGameCreateFailReasonNotify
+message DebugNotify
 {
-    GCGGameCreateReason reason = 15;
+    uint32 id = 1;
+    string name = 2;
+    Retcode retcode = 3;
 
-    enum GCGGameCreateReason
+    enum Enum
     {
-        GCG_GAME_CREATE_REASON_NONE = 0;
-        GCG_GAME_CREATE_REASON_GAME_MAX = 1;
-        GCG_GAME_CREATE_REASON_CLIENT_VERSION_NOT_LASTEST = 2;
-        GCG_GAME_CREATE_REASON_RESOURCE_NOT_COMPLETE = 3;
-        GCG_GAME_CREATE_REASON_TIMEOUT = 4;
+        option allow_alias = true;
+        ZERO = 0;
+        ENET_IS_RELIABLE = 1;
+        ENET_CHANNEL_ID = 2;
+        CMD_ID = 101;
+        TARGET_SERVICE = 101;
+    }
+    enum Retcode
+    {
+        SUCC = 0;
+        FAIL = 1;
     }
 }

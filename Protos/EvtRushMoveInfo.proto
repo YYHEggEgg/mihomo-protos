@@ -26,7 +26,7 @@ message EvtRushMoveInfo
     Vector rush_attack_target_pos = 8;
     Vector rush_to_pos = 9;
     int32 state_name_hash = 11;
-    float timeRange = 15;
+    float time_range = 15;
     Vector velocity = 6;
 }
 

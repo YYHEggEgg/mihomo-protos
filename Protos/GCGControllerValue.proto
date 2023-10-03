@@ -20,7 +20,7 @@ package miHomo.Protos;
 
 enum GCGControllerValue
 {
-    GCG_CONTROLLER_NONE = 0;
-    GCG_CONTROLLER_A = 1;
-    GCG_CONTROLLER_B = 2;
+    GCG_CONTROLLER_VALUE_NONE = 0;
+    GCG_CONTROLLER_VALUE_A = 1;
+    GCG_CONTROLLER_VALUE_B = 2;
 }

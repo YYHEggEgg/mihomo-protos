@@ -28,8 +28,8 @@ message ServerUpdateGlobalValueNotify
 
     enum UpdateType
     {
-        INVALUE = 0;
-        ADD = 1;
-        SET = 2;
+        UPDATE_TYPE_INVALUE = 0;
+        UPDATE_TYPE_ADD = 1;
+        UPDATE_TYPE_SET = 2;
     }
 }

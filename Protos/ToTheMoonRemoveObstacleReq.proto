@@ -26,7 +26,7 @@ message ToTheMoonRemoveObstacleReq
 
     enum ObstacleType
     {
-        Box = 0;
-        Capsule = 1;
+        OBSTACLE_TYPE_BOX = 0;
+        OBSTACLE_TYPE_CAPSULE = 1;
     }
 }

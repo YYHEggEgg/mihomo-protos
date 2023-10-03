@@ -20,6 +20,6 @@ package miHomo.Protos;
 
 enum LoginRewardConfigType
 {
-    LOGIN_REWARD_IMMEDIDATE = 0;
-    LOGIN_REWARD_FIRST = 1;
+    LOGIN_REWARD_CONFIG_TYPE_IMMEDIDATE = 0;
+    LOGIN_REWARD_CONFIG_TYPE_FIRST = 1;
 }

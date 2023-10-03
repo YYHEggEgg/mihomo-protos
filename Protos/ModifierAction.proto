@@ -20,6 +20,6 @@ package miHomo.Protos;
 
 enum ModifierAction
 {
-    ADDED = 0;
-    REMOVED = 1;
+    MODIFIER_ACTION_ADDED = 0;
+    MODIFIER_ACTION_REMOVED = 1;
 }

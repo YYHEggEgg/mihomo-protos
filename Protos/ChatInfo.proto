@@ -35,9 +35,9 @@ message ChatInfo
 
     enum SystemHintType
     {
-        CHAT_NONE = 0;
-        CHAT_ENTER_WORLD = 1;
-        CHAT_LEAVE_WORLD = 2;
+        SYSTEM_HINT_TYPE_CHAT_NONE = 0;
+        SYSTEM_HINT_TYPE_CHAT_ENTER_WORLD = 1;
+        SYSTEM_HINT_TYPE_CHAT_LEAVE_WORLD = 2;
     }
 
     message SystemHint

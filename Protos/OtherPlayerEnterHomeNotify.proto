@@ -25,8 +25,8 @@ message OtherPlayerEnterHomeNotify
 
     enum Reason
     {
-        INVALID = 0;
-        ENTER = 1;
-        LEAVE = 2;
+        REASON_INVALID = 0;
+        REASON_ENTER = 1;
+        REASON_LEAVE = 2;
     }
 }

@@ -20,6 +20,6 @@ package miHomo.Protos;
 
 enum GCGIntentionChangeType
 {
-    GCG_INTENTION_CHANGE_NONE = 0;
-    GCG_INTENTION_CHANGE_RM = 1;
+    GCG_INTENTION_CHANGE_TYPE_NONE = 0;
+    GCG_INTENTION_CHANGE_TYPE_RM = 1;
 }

@@ -23,7 +23,7 @@ message EvtAnimatorStateChangedInfo
     uint32 entity_id = 15;
     int32 face_angle_compact = 14;
     float fade_duration = 3;
-    bool forceSync = 1;
+    bool force_sync = 1;
     bool handle_animator_state_immediately = 7;
     uint32 layer = 2;
     uint32 normalized_time_compact = 9;

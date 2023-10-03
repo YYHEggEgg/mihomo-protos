@@ -26,9 +26,9 @@ message UseMiracleRingReq
 
     enum MiracleRingOpType
     {
-        MIRACLE_RING_OP_NONE = 0;
-        MIRACLE_RING_OP_PLACE = 1;
-        MIRACLE_RING_OP_RETRACT = 2;
+        MIRACLE_RING_OP_TYPE_NONE = 0;
+        MIRACLE_RING_OP_TYPE_PLACE = 1;
+        MIRACLE_RING_OP_TYPE_RETRACT = 2;
     }
 }
 

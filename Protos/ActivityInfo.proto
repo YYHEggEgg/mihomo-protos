@@ -55,7 +55,7 @@ message ActivityInfo
         BounceConjuringActivityDetailInfo bounce_conjuring_info = 767;
         BrickBreakerDetailInfo brick_breaker_info = 1369;
         BuoyantCombatDetailInfo buoyant_combat_info = 1842;
-        ChannelerSlabActivityDetailInfo challneler_slab_info = 1015;
+        ChannelerSlabActivityDetailInfo channeler_slab_info = 1015;
         CharAmusementDetailInfo char_amusement_info = 1496;
         ChessActivityDetailInfo chess_info = 927;
         CoinCollectDetailInfo coin_collect_info = 1679;
@@ -95,7 +95,7 @@ message ActivityInfo
         PotionActivityDetailInfo potion_info = 1273;
         RockBoardExploreDetailInfo rock_board_explore_info = 1078;
         RogueDiaryActivityDetailInfo rogue_diary_info = 812;
-        RoguelikeDungeonActivityDetailInfo roguelike_dungoen_info = 219;
+        RoguelikeDungeonActivityDetailInfo roguelike_dungeon_info = 219;
         SalesmanActivityDetailInfo salesman_info = 11;
         SeaLampActivityDetailInfo sam_lamp_info = 7;
         SeaLampActivityInfo sea_lamp_info = 494;

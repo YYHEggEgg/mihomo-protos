@@ -22,7 +22,7 @@ message AnimatorParameterValueInfo
 {
     uint32 para_type = 1;
 
-    oneof paraVal
+    oneof para_val
     {
         bool bool_val = 4;
         float float_val = 3;

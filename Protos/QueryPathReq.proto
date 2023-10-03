@@ -40,9 +40,9 @@ message QueryPathReq
     }
     enum OptionType
     {
-        OPTION_NONE = 0;
-        OPTION_NORMAL = 1;
-        OPTION_FIRST_CAN_GO = 2;
+        OPTION_TYPE_NONE = 0;
+        OPTION_TYPE_NORMAL = 1;
+        OPTION_TYPE_FIRST_CAN_GO = 2;
     }
 }
 

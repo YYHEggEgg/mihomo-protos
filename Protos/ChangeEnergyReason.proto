@@ -20,6 +20,6 @@ package miHomo.Protos;
 
 enum ChangeEnergyReason
 {
-    CHANGE_ENERGY_NONE = 0;
-    CHANGE_ENERGY_SKILL_START = 1;
+    CHANGE_ENERGY_REASON_NONE = 0;
+    CHANGE_ENERGY_REASON_SKILL_START = 1;
 }

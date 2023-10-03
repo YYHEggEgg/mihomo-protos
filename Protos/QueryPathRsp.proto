@@ -35,9 +35,9 @@ message QueryPathRsp
     }
     enum PathStatusType
     {
-        STATUS_FAIL = 0;
-        STATUS_SUCC = 1;
-        STATUS_PARTIAL = 2;
+        PATH_STATUS_TYPE_STATUS_FAIL = 0;
+        PATH_STATUS_TYPE_STATUS_SUCC = 1;
+        PATH_STATUS_TYPE_STATUS_PARTIAL = 2;
     }
 }
 

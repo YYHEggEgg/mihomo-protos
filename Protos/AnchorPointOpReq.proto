@@ -25,9 +25,9 @@ message AnchorPointOpReq
 
     enum AnchorPointOpType
     {
-        ANCHOR_POINT_OP_NONE = 0;
-        ANCHOR_POINT_OP_TELEPORT = 1;
-        ANCHOR_POINT_OP_REMOVE = 2;
+        ANCHOR_POINT_OP_TYPE_NONE = 0;
+        ANCHOR_POINT_OP_TYPE_TELEPORT = 1;
+        ANCHOR_POINT_OP_TYPE_REMOVE = 2;
     }
     enum CmdId
     {

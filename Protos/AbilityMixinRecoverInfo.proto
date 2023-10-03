@@ -26,7 +26,7 @@ message AbilityMixinRecoverInfo
     uint32 local_id = 3;
     repeated MassivePropSyncInfo massive_prop_list = 6;
 
-    oneof Source
+    oneof source
     {
         uint32 instanced_ability_id = 1;
         uint32 instanced_modifier_id = 2;

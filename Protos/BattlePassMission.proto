@@ -29,9 +29,9 @@ message BattlePassMission
 
     enum MissionStatus
     {
-        MISSION_INVALID = 0;
-        MISSION_UNFINISHED = 1;
-        MISSION_FINISHED = 2;
-        MISSION_POINT_TAKEN = 3;
+        MISSION_STATUS_INVALID = 0;
+        MISSION_STATUS_UNFINISHED = 1;
+        MISSION_STATUS_FINISHED = 2;
+        MISSION_STATUS_POINT_TAKEN = 3;
     }
 }

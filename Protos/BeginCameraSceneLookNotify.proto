@@ -51,8 +51,8 @@ message BeginCameraSceneLookNotify
     }
     enum KeepRotType
     {
-        KEEP_ROT_X = 0;
-        KEEP_ROT_XY = 1;
+        KEEP_ROT_TYPE_X = 0;
+        KEEP_ROT_TYPE_XY = 1;
     }
 }
 

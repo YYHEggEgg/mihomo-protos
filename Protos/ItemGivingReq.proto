@@ -37,8 +37,8 @@ message ItemGivingReq
     }
     enum ItemGivingType
     {
-        QUEST = 0;
-        GADGET = 1;
+        ITEM_GIVING_TYPE_QUEST = 0;
+        ITEM_GIVING_TYPE_GADGET = 1;
     }
 }
 

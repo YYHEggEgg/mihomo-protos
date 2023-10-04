@@ -20,6 +20,6 @@ package miHomo.Protos;
 
 enum GroupVariableType
 {
-    VARIABLE_TYPE_NORMAL = 0;
-    VARIABLE_TYPE_LOGIC_STATE = 1;
+    GROUP_VARIABLE_TYPE_NORMAL = 0;
+    GROUP_VARIABLE_TYPE_LOGIC_STATE = 1;
 }

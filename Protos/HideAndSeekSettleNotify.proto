@@ -40,8 +40,8 @@ message HideAndSeekSettleNotify
     enum SettleReason
     {
         SETTLE_REASON_TIME_OUT = 0;
-        SETTLE_PLAY_END = 1;
-        SETTLE_PLAYER_QUIT = 2;
+        SETTLE_REASON_PLAY_END = 1;
+        SETTLE_REASON_PLAYER_QUIT = 2;
     }
 }
 

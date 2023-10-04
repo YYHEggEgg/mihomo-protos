@@ -20,12 +20,12 @@ package miHomo.Protos;
 
 enum SceneSurfaceMaterial
 {
-    Invalid = 0;
-    Grass = 1;
-    Dirt = 2;
-    Rock = 3;
-    Snow = 4;
-    Water = 5;
-    Tile = 6;
-    Sand = 7;
+    SCENE_SURFACE_MATERIAL_Invalid = 0;
+    SCENE_SURFACE_MATERIAL_Grass = 1;
+    SCENE_SURFACE_MATERIAL_Dirt = 2;
+    SCENE_SURFACE_MATERIAL_Rock = 3;
+    SCENE_SURFACE_MATERIAL_Snow = 4;
+    SCENE_SURFACE_MATERIAL_Water = 5;
+    SCENE_SURFACE_MATERIAL_Tile = 6;
+    SCENE_SURFACE_MATERIAL_Sand = 7;
 }

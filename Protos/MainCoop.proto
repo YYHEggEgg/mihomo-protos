@@ -31,8 +31,8 @@ message MainCoop
 
     enum Status
     {
-        INVALID = 0;
-        RUNNING = 1;
-        FINISHED = 2;
+        STATUS_INVALID = 0;
+        STATUS_RUNNING = 1;
+        STATUS_FINISHED = 2;
     }
 }

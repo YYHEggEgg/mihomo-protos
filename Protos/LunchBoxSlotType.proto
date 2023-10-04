@@ -20,7 +20,7 @@ package miHomo.Protos;
 
 enum LunchBoxSlotType
 {
-    LUNCH_BOX_SLOT_NONE = 0;
-    LUNCH_BOX_SLOT_REVIVE = 1;
-    LUNCH_BOX_SLOT_HEAL = 2;
+    LUNCH_BOX_SLOT_TYPE_NONE = 0;
+    LUNCH_BOX_SLOT_TYPE_REVIVE = 1;
+    LUNCH_BOX_SLOT_TYPE_HEAL = 2;
 }

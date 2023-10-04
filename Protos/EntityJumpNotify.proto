@@ -35,9 +35,9 @@ message EntityJumpNotify
     }
     enum Type
     {
-        NULL = 0;
-        ACTIVE = 1;
-        PASSIVE = 2;
+        TYPE_NULL = 0;
+        TYPE_ACTIVE = 1;
+        TYPE_PASSIVE = 2;
     }
 }
 

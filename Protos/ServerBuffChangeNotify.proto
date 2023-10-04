@@ -28,8 +28,8 @@ message ServerBuffChangeNotify
 
     enum ServerBuffChangeType
     {
-        ADD_SERVER_BUFF = 0;
-        DEL_SERVER_BUFF = 1;
+        SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF = 0;
+        SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF = 1;
     }
 }
 

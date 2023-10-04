@@ -25,8 +25,8 @@ message ProjectorOptionReq
 
     enum ProjectorOpType
     {
-        PROJECTOR_OP_NONE = 0;
-        PROJECTOR_OP_CREATE = 1;
-        PROJECTOR_OP_DESTROY = 2;
+        PROJECTOR_OP_TYPE_NONE = 0;
+        PROJECTOR_OP_TYPE_CREATE = 1;
+        PROJECTOR_OP_TYPE_DESTROY = 2;
     }
 }

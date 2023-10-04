@@ -20,7 +20,7 @@ package miHomo.Protos;
 
 enum ClientActionType
 {
-    CLIENT_ACTION_NONE = 0;
-    CLIENT_ACTION_LOGIN = 1;
-    CLIENT_ACTION_PING = 2;
+    CLIENT_ACTION_TYPE_NONE = 0;
+    CLIENT_ACTION_TYPE_LOGIN = 1;
+    CLIENT_ACTION_TYPE_PING = 2;
 }

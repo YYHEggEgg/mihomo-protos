@@ -20,6 +20,6 @@ package miHomo.Protos;
 
 enum GadgetPlayType
 {
-    GADGET_PLAY_NONE = 0;
-    GADGET_PLAY_CRUSIBLE = 1;
+    GADGET_PLAY_TYPE_NONE = 0;
+    GADGET_PLAY_TYPE_CRUSIBLE = 1;
 }

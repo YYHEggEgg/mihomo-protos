@@ -28,9 +28,9 @@ message Achievement
 
     enum Status
     {
-        INVALID = 0;
-        UNFINISHED = 1;
-        FINISHED = 2;
-        REWARD_TAKEN = 3;
+        STATUS_INVALID = 0;
+        STATUS_UNFINISHED = 1;
+        STATUS_FINISHED = 2;
+        STATUS_REWARD_TAKEN = 3;
     }
 }

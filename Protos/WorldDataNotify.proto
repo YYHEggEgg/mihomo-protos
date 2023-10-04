@@ -24,9 +24,9 @@ message WorldDataNotify
 
     enum DataType
     {
-        DATA_NONE = 0;
-        WORLD_LEVEL = 1;
-        IS_IN_MP_MODE = 2;
+        DATA_TYPE_NONE = 0;
+        DATA_TYPE_WORLD_LEVEL = 1;
+        DATA_TYPE_IS_IN_MP_MODE = 2;
     }
 }
 

@@ -40,8 +40,8 @@ message InvestigationMonster
 
     enum LockState
     {
-        LOCK_NONE = 0;
-        LOCK_QUEST = 1;
+        LOCK_STATE_NONE = 0;
+        LOCK_STATE_QUEST = 1;
     }
 }
 

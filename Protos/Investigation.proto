@@ -27,9 +27,9 @@ message Investigation
 
     enum State
     {
-        INVALID = 0;
-        IN_PROGRESS = 1;
-        COMPLETE = 2;
-        REWARD_TAKEN = 3;
+        STATE_INVALID = 0;
+        STATE_IN_PROGRESS = 1;
+        STATE_COMPLETE = 2;
+        STATE_REWARD_TAKEN = 3;
     }
 }

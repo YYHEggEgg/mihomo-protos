@@ -20,6 +20,6 @@ package miHomo.Protos;
 
 enum ClientType
 {
-    CLIENT_PRODUCT = 0;
-    CLIENT_DEV = 1;
+    CLIENT_TYPE_PRODUCT = 0;
+    CLIENT_TYPE_DEV = 1;
 }

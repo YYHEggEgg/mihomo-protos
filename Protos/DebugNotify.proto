@@ -18,34 +18,24 @@ syntax = "proto3";
 
 package miHomo.Protos;
 
-message BeginCameraSceneLookNotify
+message DebugNotify
 {
-    float blend_duration = 1758;
-    uint32 blend_type = 1154;
-    float custom_radius = 7;
-    uint32 disable_protect = 1103;
-    float duration = 14;
-    uint32 entity_id = 1327;
-    Vector follow_pos = 8;
-    bool is_abs_follow_pos = 1375;
-    bool is_allow_input = 2;
-    bool is_change_play_mode = 9;
-    bool is_force = 12;
-    bool is_force_walk = 10;
-    bool is_recover_keep_current = 11;
-    bool is_set_follow_pos = 13;
-    bool is_set_screenXY = 5;
-    KeepRotType keep_rot_type = 6;
-    Vector look_pos = 4;
-    repeated string other_params = 1;
-    float screen_x = 3;
-    float screen_y = 15;
+    uint32 id = 1;
+    string name = 2;
+    Retcode retcode = 3;
 
-    enum KeepRotType
+    enum Enum
     {
-        KEEP_ROT_TYPE_X = 0;
-        KEEP_ROT_TYPE_XY = 1;
+        option allow_alias = true;
+        ZERO = 0;
+        ENET_IS_RELIABLE = 1;
+        ENET_CHANNEL_ID = 2;
+        CMD_ID = 101;
+        TARGET_SERVICE = 101;
+    }
+    enum Retcode
+    {
+        SUCC = 0;
+        FAIL = 1;
     }
 }
-
-import "Vector.proto";

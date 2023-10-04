@@ -25,8 +25,8 @@ message UpdateAbilityCreatedMovingPlatformNotify
 
     enum OpType
     {
-        OP_NONE = 0;
-        OP_ACTIVATE = 1;
-        OP_DEACTIVATE = 2;
+        OP_TYPE_NONE = 0;
+        OP_TYPE_ACTIVATE = 1;
+        OP_TYPE_DEACTIVATE = 2;
     }
 }

@@ -18,7 +18,7 @@ syntax = "proto3";
 
 package miHomo.Protos;
 
-message AbilityActionFireAfterImage
+message AbilityActionFireAfterImgae
 {
     Vector dir = 10;
 }
